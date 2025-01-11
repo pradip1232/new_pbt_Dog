@@ -8,11 +8,26 @@ import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Research from './pages/Research';
 import Footer from './components/Footer';
+import Preloader from './components/Preloader';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer); 
+  }, []);
+
+  if (loading) {
+    return <Preloader />;
+  }
+
+
   return (
     <Router>
       <NavbarComponent />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/our-company" element={<Company />} />
@@ -22,7 +37,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/research-and-innovation" element={<Research />} />
       </Routes>
-      <Footer  />
+      <Footer />
     </Router>
   );
 }

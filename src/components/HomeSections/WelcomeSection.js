@@ -1,8 +1,9 @@
 import React from 'react';
 import '../css/WelcomeSection.css'; // Custom CSS for styling
-import dog from '../img/1  (5).webp'; // Dog image path
 import { Col, Container, Row } from 'react-bootstrap';
 
+
+import dog from '../img/HOMEPAGE/homepage (21).png';
 function WelcomeSection() {
 
     const products = [
@@ -19,20 +20,30 @@ function WelcomeSection() {
             <Row className="d-flex align-items-center justify-content-center mb-5">
                 {/* Left Content and Text */}
                 <Col lg={10} md={12} className="d-flex align-items-center content-section">
-                    <div className="text-content">
-                        <h1 className="fw-bold">WELCOME TO</h1>
-                        <h2 className="fw-bold">PANAV BIO-TECH</h2>
-                        <p className="text-justify">
-                            The corporate ideology to construct consciousness regarding the relevance of vaccines in
-                            animals' life and serve the animal race with quality vaccines at economical prices to
-                            enhance their quality of life.
-                            <br />
-                            The ethics and beliefs such as virtuosity, eminence, fidelity, faith, and gratitude make
-                            Panav Biotech a company that stands out in the veterinary world. The innovations, service
-                            orientation, drive towards achieving success, and an attitude of being triumphant against
-                            all odds are at the heart of Panav Bio-tech.
-                        </p>
-                    </div>
+                    <Row>
+                        <Col md={6} className='welcome-home-heading'>
+
+                            <h1 className="fw-bold">WELCOME TO</h1>
+                            <h2 className="fw-bold">PANAV BIO-TECH</h2>
+                        </Col>
+                        <Col md={6}>
+
+
+                            <div className="text-content">
+                                <p className="text-justify">
+                                    The corporate ideology to construct consciousness regarding the relevance of vaccines in
+                                    animals' life and serve the animal race with quality vaccines at economical prices to
+                                    enhance their quality of life.
+                                    <br />
+                                    The ethics and beliefs such as virtuosity, eminence, fidelity, faith, and gratitude make
+                                    Panav Biotech a company that stands out in the veterinary world. The innovations, service
+                                    orientation, drive towards achieving success, and an attitude of being triumphant against
+                                    all odds are at the heart of Panav Bio-tech.
+                                </p>
+                            </div>
+                        </Col>
+
+                    </Row>
                 </Col>
 
                 {/* Right Side Dog Image */}

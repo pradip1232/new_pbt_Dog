@@ -3,17 +3,24 @@ import { LinkContainer } from 'react-router-bootstrap'; // Helps with React Rout
 import './css/navbar.css';
 import logo from './img/homepage (38).webp';
 import { Helmet } from 'react-helmet';
+import { useState } from 'react';
+
 function NavbarComponent() {
+    // State to track the active link
+    const [activeLink, setActiveLink] = useState('/'); // Default to Home
+
+    const handleLinkClick = (link) => {
+        setActiveLink(link); // Set the clicked link as active
+        // console.log(`Clicked on ${link}`); // Log the clicked link
+    };
+
     return (
         <>
-        <Helmet>
-            <link rel='icon' href={logo} type='image/webp' />
-        </Helmet>
+            <Helmet>
+                <link rel='icon' href={logo} type='image/webp' />
+            </Helmet>
             {/* Upper Info Strip */}
-            <div
-                className="container-fluid upperStrip d-flex align-items-center"
-
-            >
+            <div className="container-fluid upperStrip d-flex align-items-center">
                 <div className="row w-100">
                     {/* Left Side: Email and Phone Number */}
                     <div className="col-md-6 d-flex align-items-center">
@@ -51,15 +58,8 @@ function NavbarComponent() {
                 </div>
             </div>
 
-
             {/* Navbar Section */}
-            <Navbar className='navbar-cutom'
-                bg="white"
-                variant="light"
-                expand="lg"
-                sticky="top"
-               
-            >
+            <Navbar className='navbar-cutom' bg="white" variant="light" expand="lg" sticky="top">
                 <Container>
                     {/* Brand Logo */}
                     <Navbar.Brand href="/">
@@ -67,7 +67,6 @@ function NavbarComponent() {
                             src={logo} // Replace with actual logo path
                             alt="Panav Biotech Logo"
                             className="d-inline-block align-top custom-loggo"
-                           
                         />
                     </Navbar.Brand>
 
@@ -75,26 +74,26 @@ function NavbarComponent() {
                     <Navbar.Collapse id="navbar-nav" className='navbar-nav-links'>
                         <Nav className="ms-auto">
                             {/* Navigation Links */}
-                            <LinkContainer to="/">
-                                <Nav.Link className='navLink-custom'>Home</Nav.Link>
+                            <LinkContainer to="/" onClick={() => handleLinkClick('/')}>
+                                <Nav.Link className={`navLink-custom ${activeLink === '/' ? 'active-link' : ''}`}>Home</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/our-company">
-                                <Nav.Link className='navLink-custom'>Our Company</Nav.Link>
+                            <LinkContainer to="/our-company" onClick={() => handleLinkClick('/our-company')}>
+                                <Nav.Link className={`navLink-custom ${activeLink === '/our-company' ? 'active-link' : ''}`}>Our Company</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/products">
-                                <Nav.Link className='navLink-custom'>Products</Nav.Link>
+                            <LinkContainer to="/products" onClick={() => handleLinkClick('/products')}>
+                                <Nav.Link className={`navLink-custom ${activeLink === '/products' ? 'active-link' : ''}`}>Products</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/blogs">
-                                <Nav.Link className='navLink-custom'>Blogs</Nav.Link>
+                            <LinkContainer to="/blogs" onClick={() => handleLinkClick('/blogs')}>
+                                <Nav.Link className={`navLink-custom ${activeLink === '/blogs' ? 'active-link' : ''}`}>Blogs</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/events">
-                                <Nav.Link className='navLink-custom'>Events</Nav.Link>
+                            <LinkContainer to="/events" onClick={() => handleLinkClick('/events')}>
+                                <Nav.Link className={`navLink-custom ${activeLink === '/events' ? 'active-link' : ''}`}>Events</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/contact">
-                                <Nav.Link className='navLink-custom'>Contact Us</Nav.Link>
+                            <LinkContainer to="/contact" onClick={() => handleLinkClick('/contact')}>
+                                <Nav.Link className={`navLink-custom ${activeLink === '/contact' ? 'active-link' : ''}`}>Contact Us</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/research-and-innovation">
-                                <Nav.Link className='navLink-custom'>Research & Innovation</Nav.Link>
+                            <LinkContainer to="/research-and-innovation" onClick={() => handleLinkClick('/research-and-innovation')}>
+                                <Nav.Link className={`navLink-custom ${activeLink === '/research-and-innovation' ? 'active-link' : ''}`}>Research & Innovation</Nav.Link>
                             </LinkContainer>
                         </Nav>
                     </Navbar.Collapse>

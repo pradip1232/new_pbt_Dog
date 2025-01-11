@@ -1,5 +1,19 @@
 /* WelcomeSection.css */
 
+
+
+.welcome-home-heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+
+
 /* Main Section Styling */
 .welcome-section {
     height: 100vh;

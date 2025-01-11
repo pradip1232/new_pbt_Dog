@@ -1,41 +1,93 @@
-/* CarouselComponent.css */
-
-/* Carousel Container */
+/* General Styling for Carousel */
 .carousel-item {
-    height: 100vh;
+    height: 85vh;
     position: relative;
 }
 
-/* Background Image Styling with Linear Gradient */
+/* Styling for Carousel Images with Overlay */
+.carousel-images-home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container */
+}
 
+.carousel-images-home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+    /* Ensures the overlay appears above the image */
+    pointer-events: none;
+    /* Allows interactions to pass through the gradient */
+}
 
-/* Caption Styling */
-.carousel-caption {
-    text-align: start;
+/* Styling for Carousel Text and Caption */
+.text-hero-slider-home {
+    position: absolute;
+    /* top: 10%; */
+    bottom: 2.256rem !important;
     left: 10%;
+    z-index: 2;
+    /* Ensures the text appears above the gradient and image */
+}
+
+.carousel-caption {
+    text-align: left;
+
+}
+
+.carousel-caption {
+    text-align: start !important;
+    text-align: left;
 }
 
 .carousel-caption h2 {
-    font-weight: bold;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52.67px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: #fff;
 }
 
 .carousel-caption p {
-    margin-top: 10px;
-    font-size: 18px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ddd;
+}
+
+.text-area-home-heading {
+    margin-bottom: 3rem;
 }
 
 /* Horizontal Rule */
-.carousel-caption hr {
-    width: 60px;
-    height: 3px;
+.hr-home-hero-slider {
+    width: 600px;
+    height: 2px;
     background-color: #fff;
     border: none;
+    margin: 0px 0;
 }
 
-/* Customize Carousel Indicators */
+/* Carousel Indicators */
 .carousel-indicators [data-bs-target] {
-    width: 12px!important;
-    height: 12px!important;
+    width: 8px !important;
+    height: 8px !important;
     background-color: #fff;
     opacity: 0.8;
     border-radius: 50%;
@@ -43,5 +95,8 @@
 
 .carousel-indicators {
     bottom: 20px;
-    /* Adjust indicator position */
+    display: flex !important;
+    justify-content: start !important;
+    /* height: 10px!important;
+    width: 8px!important; */
 }

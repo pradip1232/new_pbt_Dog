@@ -1,3 +1,10 @@
+body {
+    overflow-x: hidden;
+}
+
+
+
+
 .upperStrip {
     height: 32px;
     background-color: #233B77;
@@ -15,5 +22,11 @@
 }
 
 .navbar-nav-links .navLink-custom {
-    color: #233B77!important;
+    color: #233B77 !important;
+}
+
+/* Add this to your navbar.css */
+.navLink-custom.active-link {
+    font-weight: bold;
+    text-decoration: underline;
 }

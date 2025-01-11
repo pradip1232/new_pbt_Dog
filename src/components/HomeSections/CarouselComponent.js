@@ -1,108 +1,54 @@
-import { Carousel } from 'react-bootstrap';
-import dog from '../img/homepage (2).webp'; // Replace with your actual image path
-import '../css/CarouselComponent.css'; // Import the CSS
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import dog from '../img/homepage (2).webp';
+import pp from '../img/product page (8).webp';
+import gg from '../img/Group 285.png';
+import '../css/CarouselComponent.css';
 
 function CarouselComponent() {
+    const slides = [
+        {
+            id: 1,
+            image: dog,
+            title: 'Pioneering Healthcare Innovation',
+            description: 'As a leader in the Indian healthcare industry, PANAV BIO TECH is dedicated to pushing the boundaries of medical science.',
+        },
+        {
+            id: 2,
+            image: pp,
+            title: 'Advancing Wellness Solutions',
+            description: 'We deliver groundbreaking health solutions, ensuring quality and innovation for a healthier tomorrow.',
+        },
+        {
+            id: 3,
+            image: gg,
+            title: 'Shaping the Future of Healthcare',
+            description: 'With cutting-edge technology, we strive to create a lasting impact in the global health landscape.',
+        },
+    ];
+
     return (
         <Carousel interval={3000} fade={true} pause="hover" indicators={true}>
-            {/* Slide 1 */}
-            <Carousel.Item style={{ height: '100vh', position: 'relative' }}>
-                <div
-                    style={{
-                        backgroundImage: `linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(${dog})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        height: '100%',
-                        width: '100%',
-                    }}
-                ></div>
-                <Carousel.Caption className="text-start" style={{ left: '10%' }}>
-                    <h2 className="fw-bold">Pioneering Healthcare Innovation</h2>
-                    <p>
-                        As a leader in the Indian healthcare industry, <strong>PANAV BIO TECH</strong> is dedicated to
-                        pushing the boundaries of medical science.
-                    </p>
-                    <hr style={{ width: '60px', height: '3px', backgroundColor: '#fff', border: 'none' }} />
-                </Carousel.Caption>
-            </Carousel.Item>
+            {slides.map((slide) => (
+                <Carousel.Item key={slide.id} className="carousel-item">
+                    {/* Background Image */}
+                    <div className="carousel-images-home">
+                        <img src={slide.image} alt={`Slide ${slide.id}`} className="img-fluid w-100" />
+                    </div>
 
-            {/* Slide 2 */}
-            <Carousel.Item style={{ height: '100vh', position: 'relative' }}>
-                <div
-                    style={{
-                        backgroundImage: `linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(${dog})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        height: '100%',
-                        width: '100%',
-                    }}
-                ></div>
-                <Carousel.Caption className="text-start" style={{ left: '10%' }}>
-                    <h2 className="fw-bold">Transforming Wellness Landscape</h2>
-                    <p>
-                        Our cutting-edge research and innovative products are redefining health and wellness.
-                    </p>
-                    <hr style={{ width: '60px', height: '3px', backgroundColor: '#fff', border: 'none' }} />
-                </Carousel.Caption>
-            </Carousel.Item>
-
-            {/* Slide 3 */}
-            <Carousel.Item style={{ height: '100vh', position: 'relative' }}>
-                <div
-                    style={{
-                        backgroundImage: `linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(${dog})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        height: '100%',
-                        width: '100%',
-                    }}
-                ></div>
-                <Carousel.Caption className="text-start" style={{ left: '10%' }}>
-                    <h2 className="fw-bold">Driven by Innovation</h2>
-                    <p>
-                        Experience the future of healthcare with our relentless focus on quality and research.
-                    </p>
-                    <hr style={{ width: '60px', height: '3px', backgroundColor: '#fff', border: 'none' }} />
-                </Carousel.Caption>
-            </Carousel.Item>
-
-            {/* Slide 4 */}
-            <Carousel.Item style={{ height: '100vh', position: 'relative' }}>
-                <div
-                    style={{
-                        backgroundImage: `linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(${dog})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        height: '100%',
-                        width: '100%',
-                    }}
-                ></div>
-                <Carousel.Caption className="text-start" style={{ left: '10%' }}>
-                    <h2 className="fw-bold">Empowering Lives</h2>
-                    <p>
-                        We are committed to making a difference in the lives of individuals worldwide.
-                    </p>
-                    <hr style={{ width: '60px', height: '3px', backgroundColor: '#fff', border: 'none' }} />
-                </Carousel.Caption>
-            </Carousel.Item>
-
-            {/* Slide 5 */}
-            <Carousel.Item style={{ height: '100vh', position: 'relative' }}>
-                <div
-                    style={{
-                        backgroundImage: `linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(${dog})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        height: '100%',
-                        width: '100%',
-                    }}
-                ></div>
-                <Carousel.Caption className="text-start" style={{ left: '10%' }}>
-                    <h2 className="fw-bold">Innovating for Tomorrow</h2>
-                    <p>Join us on our journey towards a healthier and better future.</p>
-                    <hr style={{ width: '60px', height: '3px', backgroundColor: '#fff', border: 'none' }} />
-                </Carousel.Caption>
-            </Carousel.Item>
+                    {/* Caption */}
+                    <Carousel.Caption className="text-hero-slider-home">
+                        <Container className='text-area-home-heading'>
+                            <Row>
+                                <Col md={6} className='text-left p-0'>
+                                    <h2 className="fw-bold">{slide.title}</h2>
+                                    <p>{slide.description}</p>
+                                </Col>
+                            </Row>
+                        </Container>
+                        <hr className="hr-home-hero-slider" />
+                    </Carousel.Caption>
+                </Carousel.Item>
+            ))}
         </Carousel>
     );
 }
