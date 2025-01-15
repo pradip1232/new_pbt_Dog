@@ -20,7 +20,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    /* Overlay with a gradient */
+    /* background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%); */
     z-index: 1;
     /* Ensures the overlay appears above the image */
     pointer-events: none;

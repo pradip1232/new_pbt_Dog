@@ -4,6 +4,8 @@ import './css/navbar.css';
 import logo from './img/homepage (38).webp';
 import { Helmet } from 'react-helmet';
 import { useState } from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function NavbarComponent() {
     // State to track the active link
@@ -29,12 +31,13 @@ function NavbarComponent() {
                     </div>
 
                     {/* Right Side: Social Media Icons */}
-                    <div className="col-md-6 d-flex justify-content-end align-items-center">
+                    <div className="col-md-6 d-flex  justify-content-end align-items-center">
+
                         <a
                             href="https://facebook.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white me-2"
+                            className="text-white me-4"
                         >
                             <i className="fab fa-facebook"></i>
                         </a>
@@ -42,7 +45,7 @@ function NavbarComponent() {
                             href="https://instagram.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white me-2"
+                            className="text-white me-4"
                         >
                             <i className="fab fa-instagram"></i>
                         </a>
