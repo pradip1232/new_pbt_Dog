@@ -1,13 +1,35 @@
 .about-us-section {
+    position: relative;
     background: url('../img/HOMEPAGE/webp/scientffic bg 1.webp') no-repeat center center;
     background-size: cover;
     padding: 60px 0;
     /* color: #fff; */
 
 
-   
-    opacity: 0.6px;
 
+
+    /* opacity: 0.6px; */
+
+}
+
+.about-us-section::before {
+    opacity: 0.6px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: linear-gradient(90deg, #37539F 0%, #379ED8 100%); */
+
+    /* background-color: #003781; */
+    /* Black color with 50% opacity */
+    z-index: 1;
+}
+
+.about-us-section * {
+    position: relative;
+    z-index: 2;
 }
 
 .section-title {
@@ -23,14 +45,14 @@
     color: #e0e0e0;
 }
 
-.info-card {
+.info-card-home {
     background: rgba(255, 255, 255, 0.85);
     border-radius: 8px;
     height: 100%;
     transition: transform 0.3s ease;
 }
 
-.info-card:hover {
+.info-card-home:hover {
     transform: translateY(-10px);
 }
 
@@ -51,7 +73,7 @@
 }
 
 @media (max-width: 768px) {
-    .info-card {
+    .info-card-home {
         padding: 20px;
     }
 }

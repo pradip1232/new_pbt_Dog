@@ -45,7 +45,7 @@ const ProductSlider = () => {
     ];
 
     return (
-        <Container className="mt-5">
+        <Container className="mt-5 product-slider-home">
             <h2 className="text-center mb-4">NEW LAUNCH</h2>
             <Slider {...settings}>
                 {products.map((product) => (

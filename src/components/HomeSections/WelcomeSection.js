@@ -3,33 +3,40 @@ import '../css/WelcomeSection.css'; // Custom CSS for styling
 import { Col, Container, Row } from 'react-bootstrap';
 
 
+import f1 from '../img/homepage (32).webp';
+import f2 from '../img/homepage (33).webp';
+import f3 from '../img/homepage (34).webp';
+import f4 from '../img/homepage (35).webp';
+import f5 from '../img/homepage (36).webp';
+import f6 from '../img/homepage (37).webp';
+
 import dog from '../img/HOMEPAGE/homepage (21).png';
 function WelcomeSection() {
 
     const products = [
-        { name: 'Vaccines', icon: '💉' },
-        { name: 'Hyperimmune serums', icon: '🧪' },
-        { name: 'Endocrinology', icon: '👐' },
-        { name: 'Medicines', icon: '💊' },
-        { name: 'Diagnostic Kits', icon: '📋' },
-        { name: 'Supplements', icon: '⚕️' },
+        { name: 'Vaccines', icon: f1 },
+        { name: 'Hyperimmune serums', icon: f2 },
+        { name: 'Endocrinology', icon: f3 },
+        { name: 'Medicines', icon: f4 },
+        { name: 'Diagnostic Kits', icon: f5 },
+        { name: 'Supplements', icon: f6 },
     ];
 
     return (
         <Container fluid className="welcome-section-container my-5">
-            <Container >
-                <Row className=" d-flex align-items-center justify-content-center mb-5">
+
+
+
+            <Container>
+                <Row className="d-flex align-items-center justify-content-center mb-5 position-relative welcome-section">
                     {/* Left Content and Text */}
                     <Col lg={10} md={12} className="d-flex align-items-center home-welcome-row content-section">
                         <Row>
-                            <Col md={6} className='welcome-home-heading'>
-
-                                <h1 className="fw-bold">WELCOME TO</h1>
-                                <h2 className="fw-bold">PANAV BIO-TECH</h2>
+                            <Col md={5} className="welcome-home-heading">
+                                <h1 className="fw-boldd">WELCOME TO</h1>
+                                <h2 className="fw-boldd">PANAV BIO-TECH</h2>
                             </Col>
-                            <Col md={6}>
-
-
+                            <Col md={6} className="position-relative text-content-container">
                                 <div className="text-content">
                                     <p className="text-justify">
                                         The corporate ideology to construct consciousness regarding the relevance of vaccines in
@@ -43,26 +50,23 @@ function WelcomeSection() {
                                     </p>
                                 </div>
                             </Col>
-
                         </Row>
-                    </Col>
-
-                    {/* Right Side Dog Image */}
-                    <Col lg={2} md={12} className="position-relative">
-                        <img src={dog} alt="Dog" className="dog-image" />
+                        {/* Dog Image Positioned Outside */}
+                        {/* <img src={dog} alt="Dog" className="dog-image-outside" /> */}
                     </Col>
                 </Row>
             </Container>
 
+
             {/* Products Section */}
             <Row className="text-center my-5">
-                <h2 className="mb-4">OUR PRODUCTS</h2>
+                <h2 className="mb-4 home-our-product">OUR PRODUCTS</h2>
                 {products.map((product, index) => (
                     <Col key={index} sm={12} md={4} lg={2} className="mb-4">
                         <div className="product-circle shadow-sm mx-auto">
-                            <span className="product-icon">{product.icon}</span>
+                            <img src={product.icon} className="product-icon-home" />
                         </div>
-                        <p className="mt-2">{product.name}</p>
+                        <p className="mt-2 home-product-name">{product.name}</p>
                     </Col>
                 ))}
             </Row>

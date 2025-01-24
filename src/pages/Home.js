@@ -11,6 +11,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BlogSlider from '../components/HomeSections/BlogSlider';
 import DiagonalCardSlider from '../components/HomeSections/DiagonalCardSlider';
+import MarketLeadership from '../components/HomeSections/MarketLeadership';
+import UnlockingSlider from '../components/HomeSections/UnlockingSlider';
 
 function Home() {
     return (
@@ -22,7 +24,16 @@ function Home() {
             <ProductSlider />
             <ProductSpotlight />
 
-            <StatisticsSection />
+
+            {/* <MarketLeadership /> */}
+
+
+
+            {/* <StatisticsSection /> */}
+            <UnlockingSlider />
+
+
+
 
             <BlogSlider />
 

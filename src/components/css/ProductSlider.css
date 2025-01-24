@@ -3,30 +3,35 @@
 
 
 
-.slick-slide {
+
+.product-slider-home .slick-slide {
   padding: 0 5px;
   /* Adds 5px padding on both sides for a total 10px gap */
 }
 
-.slick-prev:before,
+
+.product-slider-home .slick-prev:before,
 .slick-next:before {
   color: rgb(243, 243, 246);
 }
 
-.card-title {
+
+.product-slider-home .card-title {
   font-weight: bold;
   margin-top: 10px;
   font-size: 18px;
   text-align: center;
 }
 
-.card-text {
+
+.product-slider-home .card-text {
   text-align: center;
   font-size: 14px;
   color: gray;
 }
 
-.product-icon {
+
+.product-slider-home .product-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,10 +43,10 @@
   margin: 0 auto 10px;
 }
 
-.product-card {
+
+.product-slider-home .product-card {
   /* padding: 15px; */
   /* padding: ; */
   /* border: none; */
+  padding: 0 55px;
 }
-
-

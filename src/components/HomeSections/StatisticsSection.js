@@ -36,7 +36,7 @@ const statistics = [
     {
         id: 4,
         title: "CLINICS",
-        number: 9,
+        number: 90,
         icon: "🏥",
         image: clinicImg,
     },
