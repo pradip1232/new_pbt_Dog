@@ -6,15 +6,14 @@ import ff from './img/HOMEPAGE/homepage (2).png'; // Import logo image
 const Footer = () => {
     return (
         <footer className="footer bg-white">
-            <Container fluid className="p-4">
-                <Row className="newsletter-section d-flex justify-content-center align-items-center  mb-4">
-                    {/* Newsletter Section */}
+            <Container fluid className="">
+                <Row className="newsletter-section d-flex justify-content-center align-items-center  mb-4 p-0">
                     <Col md={4} className="text-center text-md-start">
                         <h5 className="newsletter-title">
                             SUBSCRIBE TO OUR <strong>NEWSLETTER</strong>
                         </h5>
                     </Col>
-                    <Col md={8} lg={8} className="newsletter mb-4">
+                    <Col md={8} lg={8} className="newsletter ">
                         <Form className="d-flex flex-wrap gap-2">
                             <Form.Control
                                 type="text"

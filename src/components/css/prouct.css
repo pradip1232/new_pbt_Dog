@@ -5,16 +5,18 @@
 
 .our-product-images {
     display: block;
+    object-fit: fill;
+    max-width: 100%;
     width: 100%;
     height: auto;
     /* Maintain aspect ratio */
 }
 
 .our-product-section-cont-text {
-    position: absolute;
-    top: 35%;
+    position: relative;
+    /* top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     text-align: center;
     color: #fff;
     /* Ensure text is readable */
@@ -22,7 +24,7 @@
 
 .our-product-section-cont-text h2 {
     font-size: 2.5rem;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .our-product-hr {
@@ -34,16 +36,16 @@
 }
 
 .our-product-section-text-row {
-    margin-top: 23rem;
+    margin-top: -20rem;
 }
 
 .our-product-section-cont {
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
 }
 
 /* Cards Section */
 .our-product-section-cards {
-    margin-top: 5rem;
+    margin-top: 8rem;
     display: flex;
     flex-wrap: wrap;
     /* gap: 15px; */
@@ -74,23 +76,41 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); */
 }
 
-.product-card img {
-    object-fit: cover;
+.our-product-section-cards .product-card img {
+    object-fit: contain;
     /* Ensure the image fills without distortion */
     width: 100%;
     height: 200px;
     /* Fixed image height for uniformity */
 }
 
-.product-card button {
-    background-color: #007bff;
+.our-product-section-cards .product-card button {
+    background-color: #003781;
     /* Example primary button color */
     color: #fff;
     border: none;
     padding: 10px 20px;
     margin-top: 10px;
-    font-size: 1rem;
     border-radius: 4px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.our-product-section-cards .product-card .card-title {
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.52px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #003781;
 }
 
 .product-card button:hover {
@@ -118,12 +138,33 @@
 /* product category section */
 
 .product-filter-page .category-buttons button.active {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--scondary-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .product-filter-page .search-bar input {
-    border-radius: 20px;
+    align-items: center;
+    /* text-align: center; */
+
+}
+
+.product-filter-page .search-bar input {
+    align-items: center;
+    border-radius: 0px;
+    /* width: 400px; */
+}
+
+.search-row-heading h4 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    align-items: center;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 .product-card-filter {
@@ -141,12 +182,78 @@
     object-fit: cover;
 }
 
+.product-filter-page h3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--primary-color);
+}
 
 
 
+.product-filter-page .category-buttons .category-button {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background-color: var(--primary-color);
+    color: var(--scondary-color);
+    margin-bottom: 15px;
+}
 
 
+.product-filter-page .product-card {
+    background-color: #EEEEEE;
+}
 
+.product-filter-page .product-card img {
+    align-items: center;
+    text-align: center;
+}
+
+.product-filter-page .product-card .card-title {
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--primary-color);
+}
+
+.product-filter-page .product-card .card-text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: black;
+}
+
+.product-filter-page .product-card .know-more-button {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 4px 0px #0000001A;
+    color: var(--scondary-color);
+
+}
 
 
 
@@ -154,13 +261,38 @@
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
-    .our-product-section-cards {
-        margin-top: 2rem;
+
+    .product-filter-page .custom-product-card-colmn {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
     }
 
-    .product-card {
-        max-width: 90%;
-        /* Reduce card size for smaller screens */
+    .our-product-section-text-row {
+        margin-top: -13rem;
+        margin-bottom: 4rem;
+    }
+
+    .our-product-images {
+        display: block;
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        height: 63vh;
+    }
+
+    .our-product-section-cards {
+        margin-top: 0rem;
+    }
+
+    .product-filter-page .product-card {
+
+        width: 18rem;
+        height: auto;
+        border: none;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
     }
 
     .our-product-section-cont-text h2 {

@@ -25,7 +25,7 @@ const Products = () => {
           <Container className="container-text-card-product">
             {/* Section Title */}
             <Row className="our-product-section-text-row">
-              <div className="col-md-12 text-center">
+              <div className="col-md-12 col-lg-12 text-center">
                 <h2>Our Products</h2>
                 <hr className="our-product-hr" />
               </div>
@@ -33,7 +33,7 @@ const Products = () => {
 
             {/* Cards Section */}
             <Row className="our-product-section-cards">
-              <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div className="col-12 col-md-4 col-xs-12 col-lg-4 d-flex justify-content-center">
                 <Card className="product-card">
                   <CardImg src={fd} alt="Orion Division" className="img-fluid" />
                   <CardBody>
@@ -43,7 +43,7 @@ const Products = () => {
                 </Card>
               </div>
 
-              <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div className="col-12 col-md-4 col-xs-12 col-lg-4 d-flex justify-content-center">
                 <Card className="product-card">
                   <CardImg src={fs} alt="Regal Division" className="img-fluid" />
                   <CardBody>
@@ -53,7 +53,7 @@ const Products = () => {
                 </Card>
               </div>
 
-              <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div className="col-12 col-md-4 col-xs-12 col-lg-4 d-flex justify-content-center">
                 <Card className="product-card">
                   <CardImg src={ft} alt="Iris Division" className="img-fluid" />
                   <CardBody>
@@ -69,7 +69,7 @@ const Products = () => {
 
 
 
-<ProductFilterPage />
+      <ProductFilterPage />
 
 
 

@@ -80,17 +80,22 @@ const Blogs = () => {
 
 
 
-      <section>
+      <section className='blogs-girl-with-dog-section'>
         <Container>
           <Row>
             <div className="col-md-6">
               <img src={mask} className='img-fluid w-100' />
             </div>
-            <div className="col-md-6">
-              <h2>Welcome to the Panav Biotech Blog</h2>
-              <h4>Your Trusted Source for Animal Healthcare Insights.</h4>
-              <p>At Panav Biotech, we are committed to improving animal health and well-being through innovative and research-driven healthcare solutions. Our blog is dedicated to providing valuable insights, updates, and expert opinions on the latest trends in animal healthcare, veterinary medicine, and product innovations. Whether you’re a veterinarian, pet owner, or livestock manager, you’ll find topics here that are both informative and impactful.</p>
-              <p>Explore our latest posts and stay informed on how to ensure optimal health for your animals!</p>
+            <div className="col-md-6 text-content-blogs2">
+              <h2>Advancing Veterinary Care: Knowledge Hub</h2>
+              {/* <h4>Your Trusted Source for Animal Healthcare Insights.</h4> */}
+              <p>At PANAV BIOTECH, we are passionate about advancing animal health and wellness. This blog is your go-to destination for insights, updates, and expert knowledge in veterinary pharmaceuticals and animal care.
+                <br />
+                <br />
+                Whether you’re a veterinarian, livestock farmer, pet owner, or industry professional, we’re here to inform you about the latest innovations, trends, and best practices in animal health. From cutting-edge research and product highlights to practical tips for improving animal care, we aim to support you every step of the way.
+                <br />
+                <br />
+                Together, let’s build a healthier and more sustainable future for animals and those who care for them. Stay tuned, stay informed, and join us in our mission to make a difference.</p>
             </div>
           </Row>
         </Container>
