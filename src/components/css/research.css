@@ -1,171 +1,239 @@
 .research-and-innovation-section-hero img {
-    position: relative;
-
+  position: relative;
 }
 
 .research-and-innovation-section-hero .research-and-innovation-heading-hero {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
 }
-
-
-
-
-
-
+.research-and-innovation-heading-hero h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+}
 /* General Card Styling */
 .hover-cards-section {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .hover-card {
-    border: none;
-    border-radius: 8px;
-    background-color: white;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    /* Ensure cards stretch to full height */
-    display: flex;
-    flex-direction: column;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  transition:
+    transform 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  /* Ensure cards stretch to full height */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hover Effect */
 .hover-card:hover {
-    background-color: #003366;
-    /* Blue background on hover */
-    transform: translateY(-10px) scale(1.05);
-    /* Move upward and zoom slightly */
-    color: #fff;
-    /* White text */
+  background-color: #003366;
+  /* Blue background on hover */
+  transform: translateY(-10px) scale(1.05);
+  /* Move upward and zoom slightly */
+  color: #fff;
+  /* White text */
 }
 
 /* Text and Icon Styling */
 .hover-card:hover .icon i {
-    color: #fff;
-    /* White icon on hover */
+  color: #fff;
+  /* White icon on hover */
 }
 
+.hover-card .card-text {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: black;
+}
+.hover-card .card-title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  color: black;
+}
 .hover-card:hover .card-title {
-    color: #fff;
-    /* White title */
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  color: #fff;
+  /* White title */
 }
 
 .hover-card:hover .card-text {
-    color: #f8f9fa;
-    /* Slightly off-white text */
+  color: #f8f9fa;
+  /* Slightly off-white text */
 }
 
 /* Icon Styling */
 .hover-card .icon {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Make All Cards Equal Height */
 .hover-card .card-body {
-    flex-grow: 1;
-    /* Stretch card body to equalize height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-grow: 1;
+  /* Stretch card body to equalize height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Container for the image */
 .modran-image-colomn img {
-    position: relative;
-    border-radius: 10px;
-    /* Optional: adds rounded corners */
+  position: relative;
+  border-radius: 10px;
+  /* Optional: adds rounded corners */
+}
+
+.continum-colmn h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: var(--primary-color);
+}
+.continum-colmn p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: black;
+}
+.continum-colmn button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
 }
 
 /* Overlay Container */
 .modran-image-colomn .four-cards-text-research {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    /* Ensures proper arrangement of child items */
-    align-items: center;
-    /* Vertically aligns the child items */
-    justify-content: center;
-    /* Centers the child items horizontally */
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* Optional: semi-transparent overlay */
-    /* colo/r: #fff; */
-    /* White text for better visibility */
-    padding: 10px;
-    /* Optional: spacing around the content */
-    transition: opacity 0.3s ease-in-out;
-    /* Smooth fade effect */
-    opacity: 1;
-    /* Initially hidden */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* Ensures proper arrangement of child items */
+  align-items: center;
+  /* Vertically aligns the child items */
+  justify-content: center;
+  /* Centers the child items horizontally */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* Optional: semi-transparent overlay */
+  /* colo/r: #fff; */
+  /* White text for better visibility */
+  padding: 10px;
+  /* Optional: spacing around the content */
+  transition: opacity 0.3s ease-in-out;
+  /* Smooth fade effect */
+  opacity: 1;
+  /* Initially hidden */
 }
-
-
 
 /* Care box styling */
 .care-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .care-box img {
-    width: 50px;
-    /* Adjust size of icons */
-    height: auto;
-    margin-bottom: 10px;
+  width: 50px;
+  /* Adjust size of icons */
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .care-box h5 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
 }
-
 
 .care-box {
-    padding: 20px;
-    border: none;
-    /* border-radius: 50%; */
-    text-align: center;
-    background-color: none;
+  padding: 20px;
+  border: none;
+  /* border-radius: 50%; */
+  text-align: center;
+  background-color: none;
 }
 
 .care-box h5 {
-    margin-top: 10px;
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
+  margin-top: 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .care-box img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 @media (max-width: 768px) {
-    .care-box {
-        margin-bottom: 15px;
-    }
+  .care-box {
+    margin-bottom: 15px;
+  }
+
+  .research-and-innovation-section-hero img {
+    position: relative;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .research-and-innovation-heading-hero h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+  }
+
+  .continum-colmn h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 47px;
+    letter-spacing: 0%;
+    color: var(--primary-color);
+  }
 }

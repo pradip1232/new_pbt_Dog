@@ -1,10 +1,213 @@
 .events-section-container img {
-    position: relative;
+  position: relative;
 }
 
 .events-section-container .text-hero--events {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.events-hr-line {
+  text-align: center;
+  color: white;
+  max-width: 80%;
+  width: 100%;
+}
+
+.confrence-events-sections {
+  text-align: center;
+}
+.confrence-events-sections h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+  /* box-shadow: 0px 4px 4px 0px #00000040; */
+}
+
+.confrence-events-sections p {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.55px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+}
+
+.our-last-year-section-cont {
+  padding: 3rem 0;
+}
+.ourlast-year-section-evenst {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.ourlast-year-section-evenst h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  color: white;
+  margin-top: 10px;
+}
+.ourlast-year-section-evenst p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: white;
+}
+
+.join-our-int-web-event-section {
+  padding: 3rem 0;
+}
+.join-our-int-web-event-section .join-our-int-colmn1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.join-our-int-web-event-section .join-our-int-colmn1 h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49.24px;
+  letter-spacing: 0%;
+  color: var(--primary-color);
+}
+.join-our-int-web-event-section .join-our-int-colmn1 p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: black;
+  padding-right: 5rem;
+}
+.join-our-int-web-event-section .join-our-int-colmn1 button {
+  box-shadow: 0px 4px 4px 0px #0000001a;
+  background-color: var(--primary-color);
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 120px;
+  letter-spacing: 0%;
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.digital-publications-events-section {
+  padding: 3rem 0;
+}
+.digital-publications-events-section .digital-publications-events-colmn2 {
+  background-color: var(--primary-color);
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.digital-publications-events-section .digital-publications-events-colmn2 h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 57.04px;
+  letter-spacing: 0%;
+  color: white;
+  margin: 15px auto;
+}
+.digital-publications-events-section .digital-publications-events-colmn2 p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: white;
+}
+.digital-publications-events-section
+  .digital-publications-events-colmn2
+  button {
+  background-color: white;
+  color: var(--primary-color);
+  max-width: 120px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  border-color: white;
+}
+
+@media (max-width: 576px) {
+  .events-section-container img {
+    position: relative;
+    height: 100vh;
+    object-fit: none;
+  }
+
+  .confrence-events-sections h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 41px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    /* box-shadow: 0px 4px 4px 0px #00000040; */
+  }
+  .confrence-events-sections p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.55px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    padding: 0 4rem;
+  }
+
+  .join-our-int-web-event-section .row {
+    row-gap: 1rem;
+  }
+  .join-our-int-web-event-section .join-our-int-colmn1 h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30.24px;
+    letter-spacing: 0%;
+    color: var(--primary-color);
+  }
+
+  .digital-publications-events-section .digital-publications-events-colmn2 h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 37.04px;
+    letter-spacing: 0%;
+    color: white;
+    margin: 15px auto;
+  }
+  .digital-publications-events-section .digital-publications-events-colmn2 p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: justify;
+    color: white;
+  }
 }

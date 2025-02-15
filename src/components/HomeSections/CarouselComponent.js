@@ -27,7 +27,7 @@ function CarouselComponent() {
     ];
 
     return (
-        <Carousel interval={3000} fade={true} pause="hover" indicators={true}>
+        <Carousel interval={300000} fade={true} pause="hover" indicators={true}>
             {slides.map((slide) => (
                 <Carousel.Item key={slide.id} className="carousel-item">
                     {/* Background Image */}

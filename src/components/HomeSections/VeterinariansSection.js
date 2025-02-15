@@ -44,9 +44,9 @@ function VeterinariansSection() {
 
             <Container fluid className="divisions-section">
                 <Container>
-                    <Row className="justify-content-center">
+                    <Row className="justify-content-center division-row-cards-home">
                         {/* Orion Division */}
-                        <Col md={4} className="text-center">
+                        <Col md={4} xs={12} className="text-center">
                             <Card className="division-card">
                                 <div className="division-image">
                                     <img src={Group261} alt="Orion Division" className="circle-img" />
@@ -59,7 +59,7 @@ function VeterinariansSection() {
                         </Col>
 
                         {/* Regal Division */}
-                        <Col md={4} className="text-center">
+                        <Col md={4} xs={12} className="text-center">
                             <Card className="division-card">
                                 <div className="division-image">
                                     <img src={Group262} alt="Regal Division" className="circle-img" />
@@ -72,7 +72,7 @@ function VeterinariansSection() {
                         </Col>
 
                         {/* Iris Division */}
-                        <Col md={4} className="text-center">
+                        <Col md={4} xs={12} className="text-center">
                             <Card className="division-card">
                                 <div className="division-image">
                                     <img src={Group263} alt="Iris Division" className="circle-img" />

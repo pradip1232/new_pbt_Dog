@@ -1,59 +1,68 @@
 .mission-vision-section {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .mission-vision-card {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    overflow: hidden;
-    padding-top: 50px; /* Space for icon */
-    position: relative;
-    background-color: #ffffff;
+  padding: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-top: 50px; /* Space for icon */
+  position: relative;
+  background-color: #ffffff;
 }
 
 .icon-container {
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #0d6efd;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0d6efd;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-style {
-    color: white;
-    font-size: 24px;
+  color: white;
+  font-size: 24px;
 }
 
-.card-title {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 1.25rem;
+.card .card-body {
+  /* padding: 0; */
 }
+.mission-vision-card .card-title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+}
+.mission-vision-card .divider {
+  height: 30px;
+  padding: 0;
 
-.divider {
-    height: 3px;
-    width: 100%;
-    background-color: #0d6efd;
-    margin: 10px 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  margin: 10px 0;
 }
 
 .image-container {
-    text-align: end;
+  text-align: end;
 }
 
 .right-side-image {
-    max-width: 100%;
-    border-radius: 8px;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 @media (max-width: 992px) {
-    .mission-vision-section .right-side-image {
-        margin-top: 20px;
-    }
+  .mission-vision-section .right-side-image {
+    margin-top: 20px;
+  }
 }

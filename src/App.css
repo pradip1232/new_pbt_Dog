@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
@@ -15,8 +15,6 @@ body {
 .carousel-caption p {
   font-size: 1.2rem;
 }
-
-
 
 .slick-slide {
   padding: 0 5px;
@@ -57,4 +55,9 @@ body {
   width: 50px;
   height: 50px;
   margin: 0 auto 10px;
+}
+
+:root {
+  --primary-color: #003781;
+  --secondry-color: white;
 }

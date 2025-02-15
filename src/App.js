@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import NavbarComponent from './components/NavbarComponent';
 import Home from './pages/Home';
 import Company from './pages/Company';
@@ -13,6 +13,7 @@ import { useEffect, useState } from 'react';
 import UpcomingPage from './components/UpcomingPage';
 import ProductDetails from './pages/ProductDetails';
 import BlogDetails from './pages/BlogDetails';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,10 +27,20 @@ function App() {
     return <Preloader />;
   }
 
-
   return (
     <Router>
-      <NavbarComponent />
+      <MainLayout />
+    </Router>
+  );
+}
+
+function MainLayout() {
+  const location = useLocation();
+  const isDashboard = location.pathname === "/dashboard";
+
+  return (
+    <>
+      {!isDashboard && <NavbarComponent />}
 
       <Routes>
         <Route path="upcoming" element={<UpcomingPage />} />
@@ -42,9 +53,11 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/research-and-innovation" element={<Research />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      <Footer />
-    </Router>
+
+      {!isDashboard && <Footer />}
+    </>
   );
 }
 

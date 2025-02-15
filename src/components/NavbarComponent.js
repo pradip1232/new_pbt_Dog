@@ -1,4 +1,4 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap'; // Helps with React Router Links
 import './css/navbar.css';
 import logo from './img/homepage (38).webp';
@@ -10,6 +10,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 function NavbarComponent() {
     // State to track the active link
     const [activeLink, setActiveLink] = useState('/'); // Default to Home
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleLinkClick = (link) => {
         setActiveLink(link); // Set the clicked link as active
@@ -23,42 +24,27 @@ function NavbarComponent() {
             </Helmet>
             {/* Upper Info Strip */}
             <div className="container-fluid upperStrip d-flex align-items-center">
-                <div className="row w-100">
+                <Row className="w-100 align-items-center">
                     {/* Left Side: Email and Phone Number */}
-                    <div className="col-md-6 d-flex align-items-center">
+                    <Col xs={9} md={6} className="d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-md-0">
                         <p className="mb-0 me-3" style={{ fontSize: '14px' }}>info@panavbiotech.com</p>
                         <p className="mb-0" style={{ fontSize: '14px' }}>011-47563428</p>
-                    </div>
+                    </Col>
 
                     {/* Right Side: Social Media Icons */}
-                    <div className="col-md-6 d-flex  justify-content-end align-items-center">
+                    <Col xs={3} md={6} className="d-flex justify-content-center justify-content-md-end align-items-center">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white me-4">
+                            <i className="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white me-4">
+                            <i className="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white">
+                            <i className="bi bi-twitter"></i>
+                        </a>
+                    </Col>
+                </Row>
 
-                        <a
-                            href="https://facebook.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-white me-4"
-                        >
-                            <i className="fab fa-facebook"></i>
-                        </a>
-                        <a
-                            href="https://instagram.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-white me-4"
-                        >
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        <a
-                            href="https://twitter.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-white"
-                        >
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
 
             {/* Navbar Section */}
@@ -73,7 +59,12 @@ function NavbarComponent() {
                         />
                     </Navbar.Brand>
 
-                    <Navbar.Toggle aria-controls="navbar-nav" />
+                    <Navbar.Toggle
+                        aria-controls="navbar-nav"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        <i className={`bi ${isOpen ? "bi-x" : "bi-list"} text-black`}></i>
+                    </Navbar.Toggle>
                     <Navbar.Collapse id="navbar-nav" className='navbar-nav-links'>
                         <Nav className="ms-auto">
                             {/* Navigation Links */}

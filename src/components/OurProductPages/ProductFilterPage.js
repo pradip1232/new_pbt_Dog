@@ -31,11 +31,11 @@ const ProductFilterPage = () => {
                 // console.log("Raw Response products :  ", text);
                 const data = JSON.parse(text); // Parse manually
                 const total = data.total_products;
-                console.log("TOTAL ", total);
+                // console.log("TOTAL ", total);
                 setTotalProducts(data.total);
                 setProducts(data.products);
             } catch (err) {
-                console.error("Error parsing products:", err.message);
+                console.log("Error parsing products:", err.message);
                 setError("Failed to fetch or parse products.");
             }
         };

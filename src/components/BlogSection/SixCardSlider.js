@@ -19,7 +19,7 @@ const SixCardSlider = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           rows: 1,
         },
       },
@@ -35,7 +35,7 @@ const SixCardSlider = () => {
 
   // Sample data for cards
   const articles = [
-   { id: 4, title: "Fourth Article", description: "Short description", image: "https://via.placeholder.com/300x200" },
+    { id: 4, title: "Fourth Article", description: "Short description", image: "https://via.placeholder.com/300x200" },
     { id: 5, title: "Fifth Article", description: "Short description", image: "https://via.placeholder.com/300x200" },
     { id: 6, title: "Sixth Article", description: "Short description", image: "https://via.placeholder.com/300x200" },
   ];
@@ -52,7 +52,7 @@ const SixCardSlider = () => {
                 {/* <span className="badge bg-primary">Blog</span> */}
                 <h5 className="card-title">{article.title}</h5>
                 <p className="card-text">{article.description}</p>
-                <a  href="blog-details" className="btn btn-primary mt-auto read-more-blogs-btn text-center">Read more</a>
+                <a href="blog-details" className="btn btn-primary mt-auto read-more-blogs-btn text-center">Read more</a>
               </div>
             </div>
           </div>

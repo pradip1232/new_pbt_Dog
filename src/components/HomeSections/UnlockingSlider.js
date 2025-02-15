@@ -49,14 +49,14 @@ const UnlockingSlider = () => {
     return (
         <>
             <Container className='unlockng-container-home'>
-                <Row>
-                    <Col xs={12} md={12} lg={12}>
+                <Row className='justify-content-center'>
+                    <Col xs={10} md={12} lg={12}>
 
                         <div className="card-slider">
                             <Carousel
                                 responsive={responsive}
                                 infinite
-                                autoPlay
+                                // autoPlay
                                 autoPlaySpeed={3000}
                                 keyBoardControl
                                 showDots
