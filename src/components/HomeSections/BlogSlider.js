@@ -75,7 +75,7 @@ const BlogSlider = () => {
               <p className="card-text">{post.description}</p>
             </div>
             <div className="card-footer text-center">
-              <a href="#" className="btn btn-primary">
+              <a href="#" className="btn btn-primaryy">
                 Read More
               </a>
             </div>

@@ -1,7 +1,10 @@
 import { Carousel, Col, Container, Row } from 'react-bootstrap';
-import dog from '../img/homepage (2).webp';
-import pp from '../img/product page (8).webp';
+import dog from '../images/IMG (209).webp';
+
+import pp from '../images/IMG (229).webp';
+
 import gg from '../img/Group 285.png';
+
 import '../css/CarouselComponent.css';
 
 function CarouselComponent() {
@@ -20,14 +23,14 @@ function CarouselComponent() {
         },
         {
             id: 3,
-            image: gg,
+            image: pp,
             title: 'Shaping the Future of Healthcare',
             description: 'With cutting-edge technology, we strive to create a lasting impact in the global health landscape.',
         },
     ];
 
     return (
-        <Carousel interval={300000} fade={true} pause="hover" indicators={true}>
+        <Carousel interval={3000} fade={true} pause="hover" indicators={true}>
             {slides.map((slide) => (
                 <Carousel.Item key={slide.id} className="carousel-item">
                     {/* Background Image */}
@@ -39,7 +42,7 @@ function CarouselComponent() {
                     <Carousel.Caption className="text-hero-slider-home">
                         <Container className='text-area-home-heading'>
                             <Row>
-                                <Col md={6} className='text-left p-0'>
+                                <Col md={8} className='text-left p-0'>
                                     <h2 className="fw-bold">{slide.title}</h2>
                                     <p>{slide.description}</p>
                                 </Col>

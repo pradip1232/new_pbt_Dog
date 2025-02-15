@@ -66,6 +66,16 @@
   color: #fff;
 }
 
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 8% !important;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
 .carousel-caption p {
   font-family: Poppins;
   font-size: 20px;
@@ -78,7 +88,7 @@
 }
 
 .text-area-home-heading {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
 }
 
 /* Horizontal Rule */
@@ -87,7 +97,8 @@
   height: 2px;
   background-color: #fff;
   border: none;
-  margin: 0px 0;
+  /* margin: 0px 0; */
+  margin-bottom: 2rem;
 }
 
 /* Carousel Indicators */
@@ -100,11 +111,11 @@
 }
 
 .carousel-indicators {
-  bottom: 20px;
-  display: flex !important;
+  bottom: 34px !important;
+  display: flex !important
+;
   justify-content: start !important;
-  /* height: 10px!important;
-    width: 8px!important; */
+  left: -93px !important;
 }
 
 @media (max-width: 576px) {
