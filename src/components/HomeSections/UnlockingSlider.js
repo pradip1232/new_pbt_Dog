@@ -5,38 +5,44 @@ import 'react-multi-carousel/lib/styles.css';
 
 
 
+import f1 from '../images/IMG (178).webp';
+import f2 from '../images/IMG (123).webp';
+import f3 from '../images/IMG (76).webp';
+
+
+
 const UnlockingSlider = () => {
 
 
     const cardData = [
         {
-            image: '/path-to-dog.jpg',
+            image: f1,
             title: 'Blog',
-            subtitle: 'Unlocking the hidden potential of the biological blueprint',
+            subtitle: 'Pee Training in Dogs',
             description:
-                'Through genetics and precision analytics, scientists aim to transform the future of animal care by enabling healthier and more productive herds.',
+                'It is fairly simple to house train dogs of any age. Initially, the most important thing is the quick response. If your dog starts to pee indoors',
         },
         {
-            image: '/path-to-horse.jpg',
+            image: f2,
             title: 'Blog',
-            subtitle: 'Unlocking the hidden potential of the biological blueprint',
+            subtitle: 'A Day With Dog',
             description:
-                'Through genetics and precision analytics, scientists aim to transform the future of animal care by enabling healthier and more productive herds.',
+                'Today we are more engrossed in our busy lives than ever and are giving less time to more important things like spending time with our dogs.',
         },
         {
-            image: '/path-to-cat.jpg',
+            image: f3,
             title: 'Blog',
-            subtitle: 'Unlocking the hidden potential of the biological blueprint',
+            subtitle: 'The Importance of Immunization for Dogs and Cats',
             description:
-                'Through genetics and precision analytics, scientists aim to transform the future of animal care by enabling healthier and more productive herds.',
+                'Our veterinarian want every pet owner to know the importance of vaccinating your pet. Vaccinating your pet can also prevent the spread of diseases.',
         },
-        {
-            image: '/path-to-more.jpg',
-            title: 'Blog',
-            subtitle: 'Unlocking the hidden potential of the biological blueprint',
-            description:
-                'Through genetics and precision analytics, scientists aim to transform the future of animal care by enabling healthier and more productive herds.',
-        },
+        // {
+        //     image: '/path-to-more.jpg',
+        //     title: 'Blog',
+        //     subtitle: 'Unlocking the hidden potential of the biological blueprint',
+        //     description:
+        //         'Through genetics and precision analytics, scientists aim to transform the future of animal care by enabling healthier and more productive herds.',
+        // },
     ];
 
     const responsive = {
@@ -65,14 +71,19 @@ const UnlockingSlider = () => {
                             >
                                 {cardData.map((card, index) => (
                                     <div key={index} className="slider-item">
-                                        <Card>
+                                        <Card className="h-100 d-flex flex-column">
                                             <Card.Img variant="top" src={card.image} alt={card.title} />
-                                            <Card.Body>
-                                                <Card.Title>{card.title}</Card.Title>
+                                            <Card.Body className="d-flex flex-column">
+                                                <Card.Title className='text-left'>{card.title}</Card.Title>
                                                 <Card.Subtitle className="mb-2 text-muted">{card.subtitle}</Card.Subtitle>
-                                                <Card.Text>{card.description}</Card.Text>
-                                                <Button variant="primary">Read more</Button>
+                                                <Card.Text className="flex-grow-1">{card.description}</Card.Text>
                                             </Card.Body>
+                                            <Card.Footer>
+                                                <Button variant="primary" className="mt-auto readmore-bloging-home-btn">
+                                                    Read more
+                                                </Button>
+
+                                            </Card.Footer>
                                         </Card>
                                     </div>
                                 ))}

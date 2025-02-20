@@ -1,81 +1,137 @@
 /* Footer Styles */
 .footer {
-    background-color: #fff;
-    padding: 40px 0;
+  background-color: #fff;
+  padding: 40px 0;
 }
 
 .newsletter {
-    margin: 15px 0;
-
+  margin: 15px 0;
 }
 
 .newsletter-title {
-    color: #0c3c84;
-    font-weight: bold;
-    margin-bottom: 10px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .newsletter form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .newsletter button {
-    border-radius: 0px;
+  border-radius: 0px;
+  background-color: var(--primary-color);
+  border: none;
 }
 
 .newsletter input {
-    border-radius: 0px;
-    min-width: 200px;
-    flex: 1;
+  border-radius: 0px;
+  min-width: 200px;
+  flex: 1;
 }
-
+.footer-logo-img,
 .logo-img {
-    width: 350px;
-    margin: 0 auto;
+  height: 100%;
+  width: 450px;
+  object-fit: scale-down;
+  margin: 0 auto;
 }
-
+.footer .imglogo-footer {
+  position: absolute;
+  left: 32.5%;
+  margin-top: 10px;
+}
 .newsletter-section h5 {
-    color: white;
+  color: white;
 }
 
 .newsletter-section {
-    display: flex;
-    flex-direction: row;
-    background-color: #0c3c84;
-
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-color);
+  padding: 0 5rem;
 }
 
 .footer-img-colmn {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .info p,
 .info ul {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .info ul {
-    padding-left: 0;
+  padding-left: 0;
+}
+
+.footer strong {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: var(--primary-color);
+}
+.footer .contact-info .icon-footer img {
+  width: 60px;
+
+  height: 60px;
+
+  background-color: var(--primary-color);
+  text-align: center;
+  align-items: center;
+
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  padding: 2px;
+  object-fit: none;
+}
+.footer .row p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: black;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    .newsletter {
-        text-align: center;
-    }
+  .newsletter {
+    text-align: center;
+  }
 
-    .newsletter form {
-        justify-content: center;
-    }
+  .newsletter form {
+    justify-content: center;
+  }
 
-    .logo-img {
-        margin: 15px auto;
-    }
+  .logo-img {
+    margin: 15px auto;
+  }
 
-    .info {
-        text-align: center;
-    }
+  .info {
+    /* text-align: center; */
+  }
+  .footer-logo-img,
+  .logo-img {
+    height: 100%;
+    width: 365px;
+    object-fit: scale-down;
+    margin: 0 auto;
+  }
+  .footer .imglogo-footer {
+    position: absolute;
+    left: 58.5%;
+    margin-top: 37px;
+    height: 105px;
+    width: 102px;
+  }
+  .phonenumber-footer {
+    padding: 0 64px 0 0;
+  }
 }

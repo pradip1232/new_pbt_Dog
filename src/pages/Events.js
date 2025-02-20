@@ -34,7 +34,7 @@ const Events = () => {
             </div>
             <div className="col-md-5 ourlast-year-section-evenst">
               <h2 className="text-centerr">Our Last Year Event</h2>
-              <p>PaNAV BIOTECH IN ASSOCIATION WITH PETS PRACTITIONERS ASSOCIATION OF MUMBAI (PPAM) ORGANIZED PANAV BIOTECH SYMPOSIUM 2023</p>
+              <p>PANAV BIOTECH IN ASSOCIATION WITH PETS PRACTITIONERS ASSOCIATION OF MUMBAI (PPAM) ORGANIZED PANAV BIOTECH SYMPOSIUM 2023</p>
               <p>Panav Biotech and Candioli Pharma in association with PETS PRACTITIONERS ASSOCIATION OF MUMBAI (PPAM) Organized Panav Biotech Symposium 2023 on New Diagnosis and Management of Chronic Kidney Disease (CKD) & Chronic Pain. The event was held at the Radisson Blu Mumbai, and over 200 veterinarians attended the event.</p>
             </div>
           </div>

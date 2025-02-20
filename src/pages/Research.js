@@ -4,6 +4,8 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import '../components/css/research.css';
 import mask from '../components/img/Mask group.png';
 import mm from '../components/img/Modern abstract four elements infographic template 1.png';
+
+import f1 from '../components/images/IMG (220).webp'; 
 const Research = () => {
   const cardData = [
     {
@@ -78,7 +80,7 @@ const Research = () => {
                 {/* Predict */}
                 <Col xs={6} className="mb-3">
                   <div className="care-box text-center">
-                    <img src="/path/to/predict-icon.png" alt="Predict" className="mb-2" />
+                    <img src={f1} alt="Predict" className="mb-2" />
                     <h5 className="fw-bold">PREDICT</h5>
                   </div>
                 </Col>
@@ -86,7 +88,7 @@ const Research = () => {
                 {/* Detect */}
                 <Col xs={6} className="mb-3">
                   <div className="care-box text-center">
-                    <img src="/path/to/detect-icon.png" alt="Detect" className="mb-2" />
+                    <img src={f1} alt="Detect" className="mb-2" />
                     <h5 className="fw-bold">DETECT</h5>
                   </div>
                 </Col>
@@ -94,7 +96,7 @@ const Research = () => {
                 {/* Treat */}
                 <Col xs={6}>
                   <div className="care-box text-center">
-                    <img src="/path/to/treat-icon.png" alt="Treat" className="mb-2" />
+                    <img src={f1} alt="Treat" className="mb-2" />
                     <h5 className="fw-bold">TREAT</h5>
                   </div>
                 </Col>
@@ -102,7 +104,7 @@ const Research = () => {
                 {/* Prevent */}
                 <Col xs={6}>
                   <div className="care-box text-center">
-                    <img src="/path/to/prevent-icon.png" alt="Prevent" className="mb-2" />
+                    <img src={f1} alt="Prevent" className="mb-2" />
                     <h5 className="fw-bold">PREVENT</h5>
                   </div>
                 </Col>
@@ -122,7 +124,7 @@ const Research = () => {
       </section>
 
 
-      <section>
+      <section className='animal-section-research'>
         <Container>
           <Row>
             <Col md={6}>

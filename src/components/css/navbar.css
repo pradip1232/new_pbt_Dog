@@ -9,12 +9,13 @@ body {
 }
 
 .navbar-cutom {
+  padding: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .custom-loggo {
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 76px;
 }
 
 .navbar-nav-links .navLink-custom {

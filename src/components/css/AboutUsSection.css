@@ -1,31 +1,25 @@
 .about-us-section {
   position: relative;
-  background: url("../images/IMG\ \(186\).webp") no-repeat center center;
+  background: url("../images/IMG\ PBT.webp") no-repeat center center;
   background-size: cover;
-  padding: 60px 0;
-  /* color: #fff; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  /* opacity: 0.6px; */
+  /* opacity: 0.6; */
 }
 
 .about-us-section::before {
-  opacity: 0.6px;
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* background: linear-gradient(90deg, #37539F 0%, #379ED8 100%); */
-
-  /* background-color: #003781; */
-  /* Black color with 50% opacity */
-  z-index: 1;
+  inset: 0;
+  opacity: 0.6;
+  background: var(--primary-color);
 }
-
 .about-us-section * {
-  position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .about-us-section .section-title {

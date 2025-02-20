@@ -139,6 +139,20 @@
 }
 
 /* Overlay Container */
+.modran-image-colomn .four-cards-text-research img {
+  color: black;
+  background-color: var(--primary-color);
+}
+.modran-image-colomn .four-cards-text-research h5 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
 .modran-image-colomn .four-cards-text-research {
   position: absolute;
   top: 0;
@@ -236,4 +250,35 @@
     letter-spacing: 0%;
     color: var(--primary-color);
   }
+}
+
+.animal-section-research h2 {
+  margin-top: 15px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: var(--primary-color);
+}
+.animal-section-research p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: black;
+}
+
+.animal-section-research button {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  box-shadow: 0px 4px 4px 0px #0000001a;
+  border: none;
 }

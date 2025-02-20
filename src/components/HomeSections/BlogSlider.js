@@ -5,11 +5,13 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../css/BlogSlider.css'; // Import any custom styles here
 import { Autoplay } from 'swiper/modules';
 
+
+import ss from '../images/IMG (192).webp';
 const BlogSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,// Add this line
+    autoplay: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -71,12 +73,18 @@ const BlogSlider = () => {
                 <p>{post.shortDes}</p>
               </div>
             </div>
+            <div className='star-blog-section-home mx-4 d-flex mb-2'>
+              <img src={ss} alt='star' />
+              <img src={ss} alt='star' />
+              <img src={ss} alt='star' />
+              <img src={ss} alt='star' />
+            </div>
             <div className="card-body">
               <p className="card-text">{post.description}</p>
             </div>
-            <div className="card-footer text-center">
+            <div className="card-footer text-left">
               <a href="#" className="btn btn-primaryy">
-                Read More
+                Read More...
               </a>
             </div>
           </div>

@@ -1,20 +1,15 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-
-
-
 .product-slider-home .slick-slide {
   padding: 0 5px;
   /* Adds 5px padding on both sides for a total 10px gap */
 }
 
-
 .product-slider-home .slick-prev:before,
 .slick-next:before {
   color: rgb(243, 243, 246);
 }
-
 
 .product-slider-home .card-title {
   font-weight: bold;
@@ -23,13 +18,11 @@
   text-align: center;
 }
 
-
 .product-slider-home .card-text {
   text-align: center;
   font-size: 14px;
   color: gray;
 }
-
 
 .product-slider-home .product-icon {
   display: flex;
@@ -38,15 +31,28 @@
   background-color: #1a2a67;
   color: white;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 68px;
+  height: 68px;
   margin: 0 auto 10px;
+  padding: 10px;
+  object-fit: none;
 }
 
+.product-slider-home .product-card .card-header {
+  height: 190px;
+  max-height: 190px;
+  max-width: 100%;
+  background: none;
+  background-color: none;
+  border: none;
+}
 
+.product-slider-home .product-card .card-header img {
+  object-fit: fill;
+}
 .product-slider-home .product-card {
   /* padding: 15px; */
   /* padding: ; */
   /* border: none; */
-  padding: 0 55px;
+  padding: 0 45px;
 }

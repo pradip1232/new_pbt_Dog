@@ -83,11 +83,11 @@ const Blogs = () => {
       <section className='blogs-girl-with-dog-section'>
         <Container>
           <Row>
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <img src={mask} className='img-fluid w-100' />
             </div>
-            <div className="col-md-6 text-content-blogs2">
-              <h2>Advancing Veterinary Care: Knowledge Hub</h2>
+            <div className="col-md-6 col-sm-12 text-content-blogs2">
+              <span>Advancing Veterinary Care: Knowledge Hub</span>
               {/* <h4>Your Trusted Source for Animal Healthcare Insights.</h4> */}
               <p>At PANAV BIOTECH, we are passionate about advancing animal health and wellness. This blog is your go-to destination for insights, updates, and expert knowledge in veterinary pharmaceuticals and animal care.
                 <br />

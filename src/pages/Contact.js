@@ -3,6 +3,12 @@ import '../components/css/contact.css';
 import ff from '../components/img/contact img 1.png';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 
+
+import cc from '../components/images/Phone icon pbt.webp';
+import lo from '../components/images/IMG (56).webp';
+import ww from '../components/images/IMG (57).webp';
+
+
 const Contact = () => {
   return (
     <>
@@ -102,8 +108,9 @@ const Contact = () => {
               <ul className="list-unstyled contact-details">
                 <li>
                   <Row>
-                    <Col md={1} className="p-0">
-                      <i className="bi bi-telephone-fill text-primary"></i>
+                    <Col md={2} className="p-0">
+                      {/* <i className="bi bi-telephone-fill text-primary"></i> */}
+                      <img src={cc} />
                     </Col>
                     <Col md={10} className="p-0">
                       <p>011-47563428, Customer care - 1800 572 1434</p>
@@ -112,8 +119,10 @@ const Contact = () => {
                 </li>
                 <li>
                   <Row>
-                    <Col xs={1} className="p-0">
-                      <i className="bi bi-geo-alt-fill text-primary"></i>
+                    <Col xs={1} md={2} className="p-0">
+                      {/* <i className="bi bi-geo-alt-fill text-primary"></i> */}
+                      <img src={ww} />
+
                     </Col>
                     <Col xs={8} className="p-0">
                       <p>70, Rama Road, B-6, Najafgarh Road Industrial Area, New Delhi, Delhi 110015</p>
@@ -122,8 +131,10 @@ const Contact = () => {
                 </li>
                 <li>
                   <Row>
-                    <Col md={1} className="p-0">
-                      <i className="bi bi-clock-fill text-primary"></i>
+                    <Col md={2} className="p-0">
+                      {/* <i className="bi bi-clock-fill text-primary"></i> */}
+                      <img src={lo} />
+
                     </Col>
                     <Col md={10} className="p-0">
                       <p>

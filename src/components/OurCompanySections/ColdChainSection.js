@@ -8,21 +8,13 @@ import coldChainImage from '../img/OUR COMPANY/our company (8).png'; // Replace 
 const ColdChainSection = () => {
     return (
         <Container fluid className="cold-chain-section">
-            <Row className="align-items-center">
-                {/* Left-side Image */}
-                <Col lg={6} md={12} className="p-0">
-                    <Image
-                        src={coldChainImage}
-                        alt="Cold Chain Management"
-                        fluid
-                        className="cold-chain-image"
-                    />
-                </Col>
+            <Row className="align-items-center  justify-content-end">
+
 
                 {/* Right-side Content */}
-                <Col lg={6} md={12} className="content-section p-5">
+                <Col lg={4} md={4} xs={12} className="content-section ">
                     <h2 className="title">
-                        COLD CHAIN <span className="highlight">MANAGEMENT</span>
+                        COLD CHAIN  <br /><span className="highlight">MANAGEMENT</span>
                     </h2>
                     <p className="description">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.

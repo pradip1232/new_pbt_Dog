@@ -36,7 +36,7 @@ function WelcomeSection() {
                         {/* Left Content and Text */}
                         <Col lg={10} md={12} className="d-flex align-items-center home-welcome-row content-section">
                             <Row>
-                                <Col md={5} className="welcome-home-heading">
+                                <Col md={5} className="welcome-home-heading text-left">
                                     <h1 className="fw-boldd">WELCOME TO</h1>
                                     <h2 className="fw-boldd">PANAV BIO-TECH</h2>
                                 </Col>

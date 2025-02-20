@@ -35,9 +35,9 @@ const SixCardSlider = () => {
 
   // Sample data for cards
   const articles = [
-    { id: 4, title: "Fourth Article", description: "Short description", image: "https://via.placeholder.com/300x200" },
-    { id: 5, title: "Fifth Article", description: "Short description", image: "https://via.placeholder.com/300x200" },
-    { id: 6, title: "Sixth Article", description: "Short description", image: "https://via.placeholder.com/300x200" },
+    { id: 4, title: "Pee Training in Dogs", description: "It is fairly simple to house train dogs of any age. Initially, the most important thing is the quick response. If your dog starts to pee indoors, take it outside immediately.", image: "https://via.placeholder.com/300x200" },
+    { id: 5, title: "A Day With Dog", description: "Today we are more engrossed in our busy lives than ever and are giving less time to more important things like spending time with our dogs. Unfortunately, there", image: "https://via.placeholder.com/300x200" },
+    { id: 6, title: "The Importance of Immunization for Dogs and Cats", description: "Our veterinarian want every pet owner to know the importance of vaccinating your pet.", image: "https://via.placeholder.com/300x200" },
   ];
 
   return (

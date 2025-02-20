@@ -18,7 +18,7 @@
 }
 
 .product-images {
-  background-color: #f7f7f7;
+  background-color: #eeeeee;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -33,22 +33,35 @@
 }
 
 .product-description {
-  background-color: #f7f7f7;
+  background-color: #eeeeee;
+  padding-left: 20px;
 }
 
 .product-description h5 {
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 7px;
+  margin: 5px 0;
+  color: var(--primary-color);
 }
 
 .product-description p {
+  font-family: Poppins;
+  font-weight: 400;
   font-size: 14px;
-  color: gray;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: black;
 }
 
 .spotlight-section {
   height: 100%;
-  background-color: #1a2a67;
+  background-color: var(--primary-color);
   padding: 30px;
 }
 
@@ -74,8 +87,16 @@
 }
 
 .unlockng-container-home .card-slider .card {
+  border-top-left-radius: 23px !important;
+  border-top-right-radius: 23px !important;
+  border: 1px solid;
+
+  border: 1px solid;
+
+  border-image-source: linear-gradient(180deg, #233b77 0%, #ffffff 100%);
+
   border: none;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .unlockng-container-home .card-slider .card-img-top {

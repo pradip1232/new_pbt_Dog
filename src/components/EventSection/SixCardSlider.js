@@ -37,16 +37,16 @@ const SixCardSlider = () => {
 
     // Sample data for cards
     const articles = [
-        { id: 4, title: "Fourth Article", description: "Short description", image: ff },
-        { id: 5, title: "Fifth Article", description: "Short description", image: ff },
-        { id: 6, title: "Sixth Article", description: "Short description", image: ff },
-        { id: 1, title: "Sixth Article", description: "Short description", image: ff },
-        { id: 2, title: "Sixth Article", description: "Short description", image: ff },
-        { id: 3, title: "Sixth Article", description: "Short description", image: ff },
+        { id: 4, title: "VETopia 2023", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,", image: ff },
+        { id: 5, title: "VETopia 2024", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,", image: ff },
+        { id: 6, title: "VETopia 2023", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,", image: ff },
+        { id: 1, title: "Sava 2021", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,", image: ff },
+        { id: 2, title: "Sava 2021", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,", image: ff },
+        { id: 3, title: "PLRC 2024", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,", image: ff },
     ];
 
     return (
-        <div className="container mt-5 mb-5 letest-articals-sections-blog">
+        <div className="container mt-5 mb-5 letest-articals-sections-blog events-section-card">
             {/* <h2 className="text-center">Latest Articles</h2> */}
             <Slider {...settings}>
                 {articles.map((article) => (

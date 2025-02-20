@@ -1,12 +1,14 @@
 .mission-vision-section {
   font-family: "Poppins", sans-serif;
+  margin-top: 2rem;
 }
 
 .mission-vision-card {
   padding: 0;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  overflow: hidden;
+  border: 0.5px solid #000000;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 0px;
+  /* overflow: hidden; */
   padding-top: 50px; /* Space for icon */
   position: relative;
   background-color: #ffffff;
@@ -17,7 +19,7 @@
   top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #0d6efd;
+  background-color: var(--primary-color);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -58,11 +60,183 @@
 
 .right-side-image {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 0px;
+  margin-right: 30px;
+  opacity: 1.5;
 }
 
 @media (max-width: 992px) {
   .mission-vision-section .right-side-image {
     margin-top: 20px;
   }
+}
+
+.trust-section-company {
+  position: relative;
+  background: url("../images/IMG (226).webp") no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* opacity: 0.95; */
+}
+
+.trust-section-company::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.95;
+  /* background: rgba(0, 55, 129, 0.8);  */
+  background: #003781b8;
+}
+.trust-section-company * {
+  z-index: 1;
+}
+.trust-section-company h3 {
+  color: white;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.trust-section-company h4 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+}
+.trust-section-company h2 {
+  color: white;
+}
+.trust-line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.trust-hr-line {
+  border: 1px solid white; /* Adjust thickness & color */
+  width: 60%;
+  margin: 0;
+}
+
+.dog-plus-img {
+  max-height: 50px;
+  width: 50px;
+  object-fit: none;
+}
+
+h2,
+h3 {
+  /* white-space: nowrap; Prevent text from wrapping */
+  margin: 0;
+}
+
+.trust-section-company img {
+  padding: 0;
+  object-fit: cover;
+
+  width: 15%;
+  height: 15%;
+}
+
+.trust-line-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+.trust-section-company .trsut-hr-line {
+  margin: 0;
+  max-width: 60%;
+  color: white;
+  border: 1px solid white;
+  background-color: white;
+  border-color: white;
+}
+
+.overview-g-map-section-company {
+  position: relative;
+  background: url("../images/IMG\ PBT.webp") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* opacity: 0.95; */
+}
+
+.overview-g-map-section-company::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.9;
+  background: var(--primary-color);
+}
+.overview-g-map-section-company * {
+  z-index: 1;
+}
+
+.overview-g-map-section-company .overviewheading-company span {
+  font-family: Source Sans Pro;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80.45px;
+  letter-spacing: 0%;
+  color: white;
+}
+.overview-g-map-section-company .overviewheading-company {
+  margin-top: 71px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: white;
+  margin-bottom: -62px;
+}
+.overview-g-map-section-company .text-colmn-company {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.overview-g-map-section-company .gmap-container-text span {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  color: white;
+}
+.overview-g-map-section-company .gmap-container-text p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0%;
+}
+
+.overview-g-map-section-company .google-map-images {
+  height: 90%;
+  width: 100%;
 }

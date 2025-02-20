@@ -3,9 +3,9 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../css/VeterinariansSection.css'; // Import custom CSS
 
 // Import images directly
-import Group261 from '../img/HOMEPAGE/webp/Group 261.webp';
-import Group262 from '../img/HOMEPAGE/webp/Group 262.webp';
-import Group263 from '../img/HOMEPAGE/webp/Group 263.webp';
+import Group261 from '../images/IMG (203).webp';
+import Group262 from '../images/IMG (204).webp';
+import Group263 from '../images/IMG (205).webp';
 import ss from '../img/HOMEPAGE/webp/scientffic  1 bg 1.webp';
 
 
@@ -32,7 +32,7 @@ const divisions = [
 
 function VeterinariansSection() {
     return (
-        <section className="veterinarians-section">
+        <section className="veterinarians-section ">
             <Container className="text-center">
                 <h2 className="section-title">
                     Sold exclusively through <span className="highlight">VETERINARIANS</span>

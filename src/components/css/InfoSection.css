@@ -1,50 +1,253 @@
+.veterinary-section-company {
+  position: relative;
+  background: url("../images/lab\ imge\ 1.png") no-repeat center center;
+  background-size: cover;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  margin: 3rem 0;
+}
+
+.veterinary-section-company .container {
+  margin-top: 11rem;
+}
+/* Card Styling */
+.veterinary-section-company .info-card {
+  background: white;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+  border-image-source: linear-gradient(
+    180deg,
+    #003781 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  border-radius: 26px;
+  /* border-width: 1px; */
+
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensures equal height for all cards */
+.veterinary-section-company .info-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon Styling */
+.veterinary-section-company .icon-circle img {
+  padding: 9px;
+  object-fit: fill;
+  height: 125px;
+  width: 125px;
+}
+.veterinary-section-company .icon-circle {
+  width: 148px;
+  height: 148px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -96px auto 15px;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.veterinary-section-company .card-text strong {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.veterinary-section-company .card-text {
+  color: #000000;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .veterinary-section-company {
+    height: auto;
+    padding: 30px 0;
+  }
+}
+
 /* Main container for the section */
 .info-section {
-    width: 100%;
-    background-color: #f9f9f9;
-    padding: 20px 0;
-  }
-  
-  /* Background image container */
-  .background-image {
-    width: 100%;
-    max-height: 300px;
-    overflow: hidden;
-  }
-  
-  .bg-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  /* Circle for the icon */
-  .icon-circle {
-    width: 80px;
-    height: 80px;
-    background-color: #1d3c6d; /* Customize the color */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .icon {
-    font-size: 40px;
-    color: white;
-  }
-  
-  /* Card text styles */
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+/* Background image container */
+.background-image {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.bg-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Circle for the icon */
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #1d3c6d; /* Customize the color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 40px;
+  color: white;
+}
+
+/* Card text styles */
+.info-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
   .info-text {
-    font-size: 16px;
-    color: #333;
-    font-weight: bold;
+    font-size: 14px;
   }
-  
-  /* Mobile adjustments */
-  @media (max-width: 768px) {
-    .info-text {
-      font-size: 14px;
-    }
+}
+
+.team-section {
+  background: #f8f9fa;
+}
+
+.team-section h2 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: var(--primary-color);
+}
+.team-section .teamcard-white-bg {
+  margin-left: 2rem;
+  margin-right: -13rem;
+  padding: 20px 150px 20px 20px;
+  background-color: #ffff;
+  /* padding: 20px; */
+}
+.team-card {
+  background: #1a3b6b;
+  color: white;
+  border-radius: 26px;
+  padding: 0px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-icon {
+  margin-top: 32px;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 160px;
+  line-height: 61.12px;
+  letter-spacing: 0%;
+
+  color: #fff;
+}
+
+.team-card .member-name {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #003781;
+
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.team-card .member-position {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.team-card .card-text {
+  color: #000000;
+}
+
+.team-image {
+  width: 100%;
+  /* max-width: 180px; */
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-card {
+    text-align: center;
+    padding: 15px;
   }
-  
+  .team-card .quote-icon {
+    font-size: 40px;
+  }
+  .team-card .team-image {
+    max-width: 120px;
+  }
+}
+
+.senior-authorities-section h2 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: var(--primary-color);
+}
+
+.senior-authorities-section h5 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.senior-authorities-section p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--primary-color);
+}

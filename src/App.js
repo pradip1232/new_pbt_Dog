@@ -43,7 +43,7 @@ function MainLayout() {
       {!isDashboard && <NavbarComponent />}
 
       <Routes>
-        <Route path="upcoming" element={<UpcomingPage />} />
+        {/* <Route path="upcoming" element={<UpcomingPage />} /> */}
         <Route path="/" element={<Home />} />
         <Route path="/our-company" element={<Company />} />
         <Route path="/products" element={<Products />} />

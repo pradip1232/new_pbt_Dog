@@ -3,8 +3,13 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../css/CompanySection.css'; // Optional CSS for custom styling
 
-import mm from '../img/OUR COMPANY/our company (4).png';
+import mm from '../images/IMG (209).webp';
 
+
+
+import f1 from '../images/IMG (219).webp';
+import f2 from '../images/IMG (220).webp';
+import f3 from '../images/IMG (221).webp';
 const CompanySection = () => {
     return (
         <div className="company-section">
@@ -27,7 +32,8 @@ const CompanySection = () => {
                         <Col md={4} className="mb-4 card-our-company2">
                             <Card className="info-card shadow">
                                 <Card.Body>
-                                    <i className="bi bi-beaker"></i> {/* Bootstrap Icon */}
+                                    {/* <i className="bi bi-beaker"></i> Bootstrap Icon */}
+                                    <img src={f1} />
                                     <Card.Title>To Pursue Perfection</Card.Title>
                                 </Card.Body>
                             </Card>
@@ -36,7 +42,9 @@ const CompanySection = () => {
                         <Col md={4} className="mb-4 card-our-company2">
                             <Card className="info-card shadow">
                                 <Card.Body>
-                                    <i className="bi bi-award"></i> {/* Bootstrap Icon */}
+                                    {/* <i className="bi bi-award"></i> Bootstrap Icon */}
+                                    <img src={f2} />
+
                                     <Card.Title>To Command Excellence</Card.Title>
                                 </Card.Body>
                             </Card>
@@ -45,8 +53,12 @@ const CompanySection = () => {
                         <Col md={4} className="mb-4 card-our-company2">
                             <Card className="info-card shadow">
                                 <Card.Body>
-                                    <i className="bi bi-heart"></i> {/* Bootstrap Icon */}
+                                    
+                                    {/* <i className="bi bi-heart"></i> Bootstrap Icon */}
+                                    <img src={f3} />
+
                                     <Card.Title>To Be Assured Care</Card.Title>
+
                                 </Card.Body>
                             </Card>
                         </Col>
