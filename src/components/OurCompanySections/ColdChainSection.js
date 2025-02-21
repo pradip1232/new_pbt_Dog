@@ -19,9 +19,14 @@ const ColdChainSection = () => {
                     <p className="description">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
-                    <Button variant="primary" className="mt-3">
-                        Know more
+                    <Button
+                        variant="primary"
+                        className="mt-3"
+                        onClick={() => window.location.href = "/cold-chain-management"}
+                    >
+                        Know More
                     </Button>
+
                 </Col>
             </Row>
         </Container>

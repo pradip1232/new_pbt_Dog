@@ -14,6 +14,7 @@ import UpcomingPage from './components/UpcomingPage';
 import ProductDetails from './pages/ProductDetails';
 import BlogDetails from './pages/BlogDetails';
 import Dashboard from './pages/Dashboard';
+import ColdChain from './pages/ColdChain';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -54,6 +55,7 @@ function MainLayout() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/research-and-innovation" element={<Research />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/cold-chain-management" element={<ColdChain />} />
       </Routes>
 
       {!isDashboard && <Footer />}

@@ -23,7 +23,7 @@
 .newsletter button {
   border-radius: 0px;
   background-color: var(--primary-color);
-  border: none;
+  border-color: white;
 }
 
 .newsletter input {
@@ -74,7 +74,7 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0%;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 .footer .contact-info .icon-footer img {
   width: 60px;
