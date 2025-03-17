@@ -13,7 +13,8 @@ import f6 from '../images/IMG (72).webp';
 
 
 
-
+import cc from '../images/IMG (31).webp';
+import rr from '../images/IMG (32).webp';
 
 
 import dog from '../img/HOMEPAGE/homepage (21).png';
@@ -31,6 +32,8 @@ function WelcomeSection() {
     return (
         <>
             <section className='welcome-dog-section'>
+                <img src={cc} alt="Welcome " className='left-side-half-circle' />
+
                 <Container>
                     <Row className="d-flex align-items-center justify-content-center mb-5 position-relative welcome-section">
                         {/* Left Content and Text */}
@@ -62,8 +65,9 @@ function WelcomeSection() {
                 </Container>
             </section>
 
+            <img src={rr} className='right-side-half-circle' />
 
-            <Container fluid className="welcome-section-container my-5">
+            <Container fluidd className="welcome-section-container my-5">
 
 
                 {/* Products Section */}

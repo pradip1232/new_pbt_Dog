@@ -1,5 +1,24 @@
 /* WelcomeSection.css */
 
+.left-side-half-circle {
+  height: 240px;
+  position: absolute;
+  margin-top: 1%;
+}
+.right-side-half-circle {
+  float: right;
+  height: 220px;
+  margin-top: -4%;
+  position: absolute;
+  align-items: flex-end;
+  text-align: end;
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  right: 0;
+}
 .welcome-home-heading {
   position: relative;
   background-image: url("../images/IMG\ \(63\).webp");

@@ -23,18 +23,9 @@ function Home() {
             <VeterinariansSection />
             <ProductSlider />
             <ProductSpotlight />
-
-
             {/* <MarketLeadership /> */}
-
-
-
             {/* <StatisticsSection /> */}
             <UnlockingSlider />
-
-
-
-
             <BlogSlider />
 
         </>

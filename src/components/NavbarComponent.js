@@ -5,6 +5,8 @@ import logo from './img/homepage (38).webp';
 import { Helmet } from 'react-helmet';
 import { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { InputAdornment, TextField } from '@mui/material';
+import { SearchIcon } from 'lucide-react';
 
 
 function NavbarComponent() {
@@ -89,6 +91,27 @@ function NavbarComponent() {
                             <LinkContainer to="/research-and-innovation" onClick={() => handleLinkClick('/research-and-innovation')}>
                                 <Nav.Link className={`navLink-custom ${activeLink === '/research-and-innovation' ? 'active-link' : ''}`}>Research & Innovation</Nav.Link>
                             </LinkContainer>
+
+                            {/* hre make the search bar with srarching icon inside the riht side s   */}
+                            {/* <LinkContainer  > */}
+                            <TextField
+                                placeholder="Search.."
+                                variant="outlined"
+                                size="small"
+                                InputProps={{
+                                    endAdornment: (
+                                        <InputAdornment position="end">
+                                            <SearchIcon />
+                                        </InputAdornment>
+                                    ),
+                                }}
+                                sx={{
+                                    width: 200, // Adjust width as needed
+                                    backgroundColor: "white",
+                                    borderRadius: 1,
+                                }}
+                            />
+                            {/* </LinkContainer> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
