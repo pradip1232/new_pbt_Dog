@@ -5,13 +5,13 @@ import ff from '../img/BLOG PAGE/blog img 1.png';
 const NumberedSlider = () => {
     // Slick slider settings
     const settings = {
-        dots: true,     
-        infinite: true,     
-        speed: 500,     
-        slidesToShow: 4,    
-        slidesToScroll: 1,  
-        autoplay: true,     
-        autoplaySpeed: 2000,    
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 768, // For mobile screens
@@ -61,10 +61,7 @@ const NumberedSlider = () => {
                                     <h5 className="step-title">{step.title}</h5>
                                     <p className="step-description">{step.describe}</p>
                                 </div>
-
                             </div>
-
-
                         </div>
                     ))}
                 </Slider>

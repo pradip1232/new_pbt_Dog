@@ -81,7 +81,7 @@ const UnlockingSlider = () => {
 
                                                 {/* Footer ensures button stays at the bottom */}
                                                 <Card.Footer className="mt-auto">
-                                                    <Button variant="primary" className="w-100 readmore-bloging-home-btn">
+                                                    <Button variant="primary" className=" readmore-bloging-home-btn">
                                                         Read more
                                                     </Button>
                                                 </Card.Footer>

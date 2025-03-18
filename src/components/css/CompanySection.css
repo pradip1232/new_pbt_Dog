@@ -91,8 +91,19 @@
   color: white;
 }
 
+.our-story {
+  padding: 2rem 0;
+}
+
+.left-side-half-circle-ourStory {
+  height: 170px;
+  position: absolute;
+  margin-top: -7%;
+}
 .our-story img {
   object-fit: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .our-story h1 {
@@ -168,7 +179,6 @@
   .cold-chain-section {
     margin-top: 5rem;
   }
-  
 }
 
 @media (max-width: 576px) {
