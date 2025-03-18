@@ -41,8 +41,9 @@
   right: 0;
   bottom: 0;
   /* background: linear-gradient(90deg, #37539F 0%, #379ED8 100%); */
-
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, #37539f 0%, #379ed8 100%);
+  opacity: 80%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
   /* Black color with 50% opacity */
   z-index: 1;
 }

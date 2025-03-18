@@ -12,8 +12,6 @@ import f3 from '../images/IMG (76).webp';
 
 
 const UnlockingSlider = () => {
-
-
     const cardData = [
         {
             image: f1,
@@ -54,15 +52,14 @@ const UnlockingSlider = () => {
 
     return (
         <>
-            <Container className='unlockng-container-home'>
-                <Row className='justify-content-center'>
+            <Container className="unlockng-container-home">
+                <Row className="justify-content-center">
                     <Col xs={10} md={12} lg={12}>
-
                         <div className="card-slider">
                             <Carousel
                                 responsive={responsive}
                                 infinite
-                                // autoPlay
+                                autoPlay
                                 autoPlaySpeed={3000}
                                 keyBoardControl
                                 showDots
@@ -71,28 +68,33 @@ const UnlockingSlider = () => {
                             >
                                 {cardData.map((card, index) => (
                                     <div key={index} className="slider-item">
-                                        <Card className="h-100 d-flex flex-column">
-                                            <Card.Img variant="top" src={card.image} alt={card.title} />
-                                            <Card.Body className="d-flex flex-column">
-                                                <Card.Title className='text-left'>{card.title}</Card.Title>
-                                                <Card.Subtitle className="mb-2 text-muted">{card.subtitle}</Card.Subtitle>
-                                                <Card.Text className="flex-grow-1">{card.description}</Card.Text>
-                                            </Card.Body>
-                                            <Card.Footer>
-                                                <Button variant="primary" className="mt-auto readmore-bloging-home-btn">
-                                                    Read more
-                                                </Button>
+                                        <Card className="h-100 d-flex flex-column card-equal-height">
+                                            <Card.Img variant="top" src={card.image} alt={card.title} className="card-img-top" />
 
-                                            </Card.Footer>
+                                            {/* Wrapper to ensure consistent height */}
+                                            <div className="blog-card-home-body-footer d-flex flex-column flex-grow-1">
+                                                <Card.Body className="d-flex flex-column flex-grow-1">
+                                                    <Card.Title className="text-left">{card.title}</Card.Title>
+                                                    <Card.Subtitle className="mb-2 text-muted">{card.subtitle}</Card.Subtitle>
+                                                    <Card.Text className="flex-grow-1">{card.description}</Card.Text>
+                                                </Card.Body>
+
+                                                {/* Footer ensures button stays at the bottom */}
+                                                <Card.Footer className="mt-auto">
+                                                    <Button variant="primary" className="w-100 readmore-bloging-home-btn">
+                                                        Read more
+                                                    </Button>
+                                                </Card.Footer>
+                                            </div>
                                         </Card>
                                     </div>
                                 ))}
                             </Carousel>
                         </div>
-
                     </Col>
                 </Row>
             </Container>
+
 
         </>
     )

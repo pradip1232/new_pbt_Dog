@@ -1,40 +1,40 @@
 .milestone-container {
-    position: relative;
-    width: 100vw;
-    height: 300px;
-    margin: auto;
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin: auto;
 }
 
 .milestone {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-color: white;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    z-index: 1;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 1;
 }
 
 .milestone-line {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 2;
-    stroke-dasharray: 4;
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2;
+  stroke-dasharray: 4;
 }
 
 .milestone-year {
-    font-size: 16px;
-    color: #333;
+  font-size: 16px;
+  color: #333;
 }
 
-svg {
+/* svg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */

@@ -6,10 +6,13 @@ import { Helmet } from 'react-helmet';
 import { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { InputAdornment, TextField } from '@mui/material';
+import { Box } from '@mui/system';
 import { SearchIcon } from 'lucide-react';
 
 
 function NavbarComponent() {
+    const [searchText, setSearchText] = useState("");
+
     // State to track the active link
     const [activeLink, setActiveLink] = useState('/'); // Default to Home
     const [isOpen, setIsOpen] = useState(false);
@@ -94,23 +97,38 @@ function NavbarComponent() {
 
                             {/* hre make the search bar with srarching icon inside the riht side s   */}
                             {/* <LinkContainer  > */}
-                            <TextField
-                                placeholder="Search.."
-                                variant="outlined"
-                                size="small"
-                                InputProps={{
-                                    endAdornment: (
-                                        <InputAdornment position="end">
-                                            <SearchIcon />
-                                        </InputAdornment>
-                                    ),
-                                }}
-                                sx={{
-                                    width: 200, // Adjust width as needed
-                                    backgroundColor: "white",
-                                    borderRadius: 1,
-                                }}
-                            />
+                            <Box sx={{ display: "flex", alignItems: "center", width: 250, backgroundColor: "white", borderRadius: 1, overflow: "hidden" }}>
+                                <TextField
+                                    placeholder="Search.."
+                                    variant="outlined"
+                                    size="small"
+                                    value={searchText}
+                                    onChange={(e) => setSearchText(e.target.value)}
+                                    sx={{
+                                        flex: 0.85, // 85% width for input
+                                        "& .MuiOutlinedInput-root": {
+                                            borderTopRightRadius: 0,
+                                            borderBottomRightRadius: 0,
+                                        },
+                                    }}
+                                />
+                                <Box
+                                    sx={{
+                                        flex: 0.15, // 15% width for icon
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        backgroundColor: "rgba(0, 55, 129, 1)",
+                                        color: "white",
+                                        cursor: "pointer",
+                                        borderTopRightRadius: 4,
+                                        borderBottomRightRadius: 4,
+                                        height: "40px",
+                                    }}
+                                >
+                                    <SearchIcon sx={{ color: "white" }} />
+                                </Box>
+                            </Box>
                             {/* </LinkContainer> */}
                         </Nav>
                     </Navbar.Collapse>
