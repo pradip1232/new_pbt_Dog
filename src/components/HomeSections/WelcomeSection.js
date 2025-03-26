@@ -4,29 +4,28 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 
 
-import f1 from '../images/IMG (67).webp';
-import f2 from '../images/IMG (68).webp';
-import f3 from '../images/IMG (69).webp';
-import f4 from '../images/IMG (70).webp';
-import f5 from '../images/IMG (71).webp';
-import f6 from '../images/IMG (72).webp';
+import fff from '../images/IMG (67).webp';
+import sd from '../images/IMG (68).webp';
+import dsds from '../images/IMG (69).webp';
+import cdcd from '../images/IMG (70).webp';
+import cvcv from '../images/IMG (71).webp';
+import dfdf from '../images/IMG (72).webp';
 
 
 
-import cc from '../images/IMG (31).webp';
-import rr from '../images/IMG (32).webp';
+import cc from '../images/PBT REMAIMING IMG (2).webp';
 
 
 import dog from '../img/HOMEPAGE/homepage (21).png';
 function WelcomeSection() {
 
     const products = [
-        { name: 'Vaccines', icon: f1 },
-        { name: 'Hyperimmune serums', icon: f2 },
-        { name: 'Endocrinology', icon: f3 },
-        { name: 'Medicines', icon: f4 },
-        { name: 'Diagnostic Kits', icon: f5 },
-        { name: 'Supplements', icon: f6 },
+        { name: 'Vaccines', icon: fff },
+        { name: 'Hyperimmune serums', icon: sd },
+        { name: 'Endocrinology', icon: dsds },
+        { name: 'Medicines', icon: cdcd },
+        { name: 'Diagnostic Kits', icon: cvcv },
+        { name: 'Supplements', icon: dfdf },
     ];
 
     return (
@@ -46,14 +45,9 @@ function WelcomeSection() {
                                 <Col md={6} className="position-relative text-content-container">
                                     <div className="text-content">
                                         <p className="text-justify">
-                                            The corporate ideology to construct consciousness regarding the relevance of vaccines in
-                                            animals' life and serve the animal race with quality vaccines at economical prices to
-                                            enhance their quality of life.
-                                            <br />
-                                            The ethics and beliefs such as virtuosity, eminence, fidelity, faith, and gratitude make
-                                            Panav Biotech a company that stands out in the veterinary world. The innovations, service
-                                            orientation, drive towards achieving success, and an attitude of being triumphant against
-                                            all odds are at the heart of Panav Bio-tech.
+                                            <b> Panav Biotech </b>: Enhancing Animal Health, Enriching Lives Our corporate philosophy is to create awareness about the significance of animal health products in their lives and provide the animal kingdom with high-quality products at accessible prices to improve their quality of life.
+                                            <br /> <br />
+                                            Our values, including integrity, excellence, loyalty, trust, and appreciation, distinguish Panav Biotech as a prominent entity in the veterinary industry.
                                         </p>
                                     </div>
                                 </Col>
@@ -65,12 +59,11 @@ function WelcomeSection() {
                 </Container>
             </section>
 
-            <img src={rr} className='right-side-half-circle' />
+            <img src={cc} className='right-side-half-circle' />
 
             <Container fluidd className="welcome-section-container my-5">
 
 
-                {/* Products Section */}
                 <Row className="text-center my-5">
                     <h2 className="mb-4 home-our-product">OUR PRODUCTS</h2>
                     {products.map((product, index) => (
@@ -82,6 +75,7 @@ function WelcomeSection() {
                         </Col>
                     ))}
                 </Row>
+
             </Container>
         </>
     );

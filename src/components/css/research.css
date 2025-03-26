@@ -1,5 +1,35 @@
-.research-and-innovation-section-hero img {
+.research-and-innovation-section-hero {
+  background-image: url("../img/Group\ 285.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  text-align: center;
   position: relative;
+}
+.research-and-innovation-section-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    358.8deg,
+    rgba(0, 0, 0, 0.6) 0.81%,
+    rgba(0, 0, 0, 0) 93.48%
+  );
+  /* background-color: var(--primary-color); */
+  opacity: 70%;
+}
+.research-and-innovation-section-hero > * {
+  position: relative;
+  z-index: 2;
+}
+.research-and-innovation-section-hero hr {
+  color: white;
+  width: 50rem;
+  margin: 0 auto; /* Center the hr line horizontally */
 }
 
 .research-and-innovation-section-hero .research-and-innovation-heading-hero {
@@ -7,8 +37,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: center !important;
   color: white;
+  width: 100%; /* Ensure full width for centering */
 }
 .research-and-innovation-heading-hero h1 {
   font-family: Poppins;

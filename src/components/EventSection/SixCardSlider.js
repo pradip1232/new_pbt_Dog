@@ -15,7 +15,7 @@ const SixCardSlider = () => {
         slidesToScroll: 1,
         // rows: 1, // 1 rows
         rows: 2, // 2 rows
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         responsive: [
             {

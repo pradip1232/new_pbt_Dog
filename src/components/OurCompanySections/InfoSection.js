@@ -11,6 +11,20 @@ import f2 from '../images/IMG (217).webp';
 import f3 from '../images/IMG (218).webp';
 import f4 from '../images/IMG (208).webp';
 import f5 from '../images/IMG (222).webp';
+import pp from '../images/IMG (103).webp';
+
+
+
+import aa from '../images/IMG (130).webp';
+import bb from '../images/IMG (131).webp';
+import cc from '../images/IMG (132).webp';
+import dd from '../images/IMG (129).webp';
+
+
+
+import m1 from '../images/IMG\ \(227\).webp';
+
+
 
 const InfoSection = () => {
   const infoData = [
@@ -53,17 +67,17 @@ const InfoSection = () => {
       position: "MANAGING DIRECTOR",
       description:
         "Doctor of Business Administration (California Public University, USA). Over 23 years of demonstrated success in driving business growth and overseeing the veterinary industry.\n\nProven ability to ensure that the veterinary industry is fully integrated and strategically aligned to exceed profitability targets.",
-      image: f4,
+      image: pp,
     },
   ];
 
 
 
   const authorities = [
-    { name: "National Business Manager" },
-    { name: "Sales Manager" },
-    { name: "Commercial Manager" },
-    { name: "HR Manager" },
+    { name: "National Business Manager", fname: "Azeem Hadi", img: aa },
+    { name: "Sales Manager", fname: "Kapil Rastogi", img: dd },
+    { name: " Chief product Manager", fname: "Dr. Ashutosh Sachan", img: bb },
+    { name: "Commercial & Foreign Trade Manager", fname: "Versha Singh", img: cc },
   ];
   return (
 
@@ -146,11 +160,15 @@ const InfoSection = () => {
                       </Card.Body>
                     </Col>
                     <Col md={4} sm={12} className="text-center">
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="team-image"
-                      />
+                      <div className="team-image-container">
+                        <img src={m1} alt="Team member background" className='team-image-container-img position-absolute mt-4' />
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="team-image"
+                          style={{ position: 'relative', zIndex: 2 }}
+                        />
+                      </div>
                     </Col>
                   </Row>
                 </Card>
@@ -178,12 +196,12 @@ const InfoSection = () => {
                   style={{ width: "120px", height: "120px" }}
                 >
                   <img
-                    src={f5}
+                    src={authority.img}
                     alt={authority.name}
                     className="w-100 h-100 object-fit-cover"
                   />
                 </div>
-                <h5 className="mt-2 fw-bold">NAME</h5>
+                <h5 className="mt-2 fw-bold">{authority.fname}</h5>
                 <p className="text-primaryy">({authority.name})</p>
               </Col>
             ))}

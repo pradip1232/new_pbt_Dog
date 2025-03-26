@@ -159,14 +159,35 @@
   /* padding: 20px; */
 }
 .team-card {
-  background: #1a3b6b;
-  color: white;
+  position: relative;
+  background-image: url("../images/PBT\ REMAIMING\ IMG\ \(3\).webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 26px;
   padding: 0px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.team-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #003781;
+  opacity: 75%;
+  border-radius: 26px;
+}
+
+.team-card > * {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
 .quote-icon {
+  z-index: 2;
   margin-top: 32px;
   font-family: Source Sans Pro;
   font-weight: 600;
@@ -202,11 +223,23 @@
 .team-card .card-text {
   color: #000000;
 }
-
-.team-image {
+/* .team-card .team-image::before {
+  background-image: url("../images/IMG\ \(227\).webp");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+} */
+.team-card .team-image {
   width: 100%;
-  /* max-width: 180px; */
+  object-fit: cover;
+
+  width: 100%;
   border-radius: 5px;
+  height: 400px;
 }
 
 /* Responsive Design */

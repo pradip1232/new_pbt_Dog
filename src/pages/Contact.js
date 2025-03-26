@@ -7,13 +7,13 @@ import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import cc from '../components/images/Phone icon pbt.webp';
 import lo from '../components/images/IMG (56).webp';
 import ww from '../components/images/IMG (57).webp';
-
+import ccc from '../components/images/PBT REMAIMING IMG (2).webp';
 
 const Contact = () => {
   return (
     <>
       <section className='contact-section-hero-cont'>
-        <img src={ff} className='img-fluid w-100' />
+        {/* <img src={ff} className='img-fluid w-100' /> */}
         <div className='contact-hero-text'>
           <h1 className='text-white'>Contact us</h1>
           <hr className='contact-hr-line' />
@@ -95,10 +95,11 @@ const Contact = () => {
       </section>
 
       <section className="get-in-touch-section py-5">
-        <Container>
+        <img src={ccc} alt="Welcome " className='left-side-half-circle-get-in-touch-section' />
+        <Container fluid>
           <Row className="align-items-center">
             {/* Contact Details */}
-            <Col lg={5} xs={12} md={5} className="mb-4 get-tehc-colmn-contact ">
+            <Col lg={6} xs={12} md={6} className="mb-4 get-tehc-colmn-contact ">
               <h2 className="text-primaryy">Get In Touch</h2>
               <p className='textparagrap1-contact'>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -108,7 +109,7 @@ const Contact = () => {
               <ul className="list-unstyled contact-details">
                 <li>
                   <Row>
-                    <Col md={2} className="p-0">
+                    <Col md={1} className="p-0">
                       {/* <i className="bi bi-telephone-fill text-primary"></i> */}
                       <img src={cc} />
                     </Col>
@@ -119,7 +120,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <Row>
-                    <Col xs={1} md={2} className="p-0">
+                    <Col xs={1} md={1} className="p-0">
                       {/* <i className="bi bi-geo-alt-fill text-primary"></i> */}
                       <img src={ww} />
 
@@ -131,7 +132,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <Row>
-                    <Col md={2} className="p-0">
+                    <Col md={1} className="p-0">
                       {/* <i className="bi bi-clock-fill text-primary"></i> */}
                       <img src={lo} />
 
@@ -170,7 +171,7 @@ const Contact = () => {
             </Col>
 
             {/* Map Section */}
-            <Col lg={7} xs={12} md={7}>
+            <Col lg={6} xs={12} md={6}>
               <iframe
                 title="Google Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.892303489748!2d77.15212317595974!3d28.655998279054555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03c4f1d61f85%3A0x2a4d236cb0c2f028!2sRama%20Road%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1695834160623!5m2!1sen!2sin"

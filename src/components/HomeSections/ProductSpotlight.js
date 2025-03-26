@@ -14,7 +14,7 @@ const ProductSpotlight = () => {
                     <Col xs={12} md={6} className="product-section">
                         <div className="product-images">
                             <img src={firstImage} alt="Product 1" className="product-img" />
-                            
+
                         </div>
                         <div className="product-description">
                             <h5>Dog</h5>
@@ -23,14 +23,14 @@ const ProductSpotlight = () => {
                     </Col>
 
                     {/* Right Column - Spotlight */}
-                    <Col xs={12} md={6} className="spotlight-section text-white d-flex align-items-center">
+                    <Col xs={12} md={6} className="spotlight-section text-white d-flex align-items-center ">
                         <div>
                             <h2 className="spotlight-title">PRODUCT SPOTLIGHT</h2>
-                            <p>
+                            <p className="spotlight-descriptionn mt-3">
                                 Lorem ipsum has been the industry's standard dummy text ever since the 1500s,
                                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </p>
-                            <Button variant="light">See more</Button>
+                            <Button variant="light mt-4">See more</Button>
                         </div>
                     </Col>
                 </Row>

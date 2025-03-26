@@ -1,30 +1,55 @@
-.company-section {
-  font-family: "Poppins", sans-serif;
-}
-
 .company-header {
   position: relative;
   text-align: center;
 }
 
-.our-company-page .header-image {
-  width: 100%;
-  height: 550px;
-  object-fit: cover;
-  opacity: 0.8;
-  padding-bottom: 4rem;
+.company-section {
+  background-image: url("../images/IMG\ \(209\).webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 85vh;
 }
 
-.our-company-page .header-overlay {
+.company-section::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+
+  /* background: rgba(0, 0, 0, 0.6); */
+}
+
+.our-company-page > * {
+  position: relative;
+  z-index: 1;
+}
+.header-overlay-text {
+  margin-top: 12rem;
+  padding: 0 11rem;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+/* .header-overlay {
+  padding: 0 11rem;
+  position: relative;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-}
+} */
 
-.header-overlay h2 {
+.header-overlay-text h2 {
+  /* margin-top: 12rem; */
   font-family: Poppins;
   font-weight: 700;
   font-size: 40px;
@@ -36,7 +61,7 @@
   color: var(--secondry-color);
 }
 
-.header-overlay p {
+.header-overlay-text p {
   max-width: 600px;
   margin: 0 auto;
   font-family: Poppins;
@@ -48,7 +73,7 @@
 }
 
 .our-cpmany-card-3 {
-  margin-top: -8rem;
+  margin-top: 1rem;
 }
 .our-cpmany-card-3 .info-card {
   background-color: var(--primary-color);
@@ -88,17 +113,61 @@
   line-height: 31.09px;
   letter-spacing: 0%;
   text-align: center;
+
   color: white;
 }
 
+.our-story-section-page .our-story img {
+  /* width: 100%; */
+  max-width: 800px;
+  height: 373px;
+  object-fit: cover;
+}
+.our-story-text-left {
+  padding-left: 4rem;
+}
+.our-story-section-page {
+  margin-top: 3rem;
+}
 .our-story {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .left-side-half-circle-ourStory {
   height: 170px;
   position: absolute;
-  margin-top: -7%;
+  margin-top: -1%;
+  left: -7%;
+}
+.left-side-half-circle-india-map {
+  height: 220px;
+  position: absolute;
+  margin-top: -19%;
+  left: -10%;
+}
+
+.right-side-half-circle-india-map {
+  height: 220px;
+  margin-top: 25%;
+  position: absolute;
+  align-items: flex-end;
+  text-align: end;
+  justify-content: end;
+  right: -110px;
+}
+.right-side-half-circle-company {
+  float: right;
+  height: 220px;
+  margin-top: 10%;
+  position: absolute;
+  align-items: flex-end;
+  text-align: end;
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  right: -79px;
 }
 .our-story img {
   object-fit: none;

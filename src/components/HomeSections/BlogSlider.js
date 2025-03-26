@@ -5,8 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../css/BlogSlider.css'; // Import any custom styles here
 import { Autoplay } from 'swiper/modules';
 
-import cc from '../images/IMG (31).webp';
-import rr from '../images/IMG (32).webp';
+import cc from '../images/PBT REMAIMING IMG (2).webp';
 
 
 import ss from '../images/IMG (192).webp';
@@ -96,7 +95,7 @@ const BlogSlider = () => {
           ))}
         </Slider>
       </div>
-      <img src={rr} className='right-side-half-circle circle-img-sliderunlockong-right' />
+      <img src={cc} className='right-side-half-circle circle-img-sliderunlockong-right' />
     </section>
 
 

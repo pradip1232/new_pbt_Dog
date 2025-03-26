@@ -34,8 +34,8 @@ const Research = () => {
   return (
     <>
       <section className='research-and-innovation-section-hero'>
-        <img src={f} className='img-fluid w-100' />
-        <Container className='research-and-innovation-heading-hero'>
+        {/* <img src={f} className='img-fluid w-100' /> */}
+        <Container className='research-and-innovation-heading-hero text-center'>
           <h1>Research and Innovation</h1>
           <hr />
         </Container>

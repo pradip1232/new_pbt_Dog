@@ -3,6 +3,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
+import d1 from '../images/IMG (176).webp';
+import d2 from '../images/IMG (79).webp';
+import d3 from '../images/IMG (76).webp';
+import { Dice3Icon } from "lucide-react";
+import cc from '../images/PBT REMAIMING IMG (2).webp';
 const SixCardSlider = () => {
   // Slider settings
   const settings = {
@@ -35,9 +41,9 @@ const SixCardSlider = () => {
 
   // Sample data for cards
   const articles = [
-    { id: 4, title: "Pee Training in Dogs", description: "It is fairly simple to house train dogs of any age. Initially, the most important thing is the quick response. If your dog starts to pee indoors, take it outside immediately.", image: "https://via.placeholder.com/300x200" },
-    { id: 5, title: "A Day With Dog", description: "Today we are more engrossed in our busy lives than ever and are giving less time to more important things like spending time with our dogs. Unfortunately, there", image: "https://via.placeholder.com/300x200" },
-    { id: 6, title: "The Importance of Immunization for Dogs and Cats", description: "Our veterinarian want every pet owner to know the importance of vaccinating your pet.", image: "https://via.placeholder.com/300x200" },
+    { id: 4, title: "Pee Training in Dogs", description: "It is fairly simple to house train dogs of any age. Initially, the most important thing is the quick response. If your dog starts to pee indoors, take it outside immediately.", image: d1 },
+    { id: 5, title: "A Day With Dog", description: "Today we are more engrossed in our busy lives than ever and are giving less time to more important things like spending time with our dogs. Unfortunately, there", image: d2 },
+    { id: 6, title: "The Importance of Immunization for Dogs and Cats", description: "Our veterinarian want every pet owner to know the importance of vaccinating your pet.", image: d3 },
   ];
 
   return (
@@ -58,6 +64,8 @@ const SixCardSlider = () => {
           </div>
         ))}
       </Slider>
+      <img src={cc} alt="Welcome " className='right-side-half-circle-blogs' />
+
     </div>
   );
 };

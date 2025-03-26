@@ -68,20 +68,18 @@ const UnlockingSlider = () => {
                             >
                                 {cardData.map((card, index) => (
                                     <div key={index} className="slider-item">
-                                        <Card className="h-100 d-flex flex-column card-equal-height">
-                                            <Card.Img variant="top" src={card.image} alt={card.title} className="card-img-top" />
-
-                                            {/* Wrapper to ensure consistent height */}
-                                            <div className="blog-card-home-body-footer d-flex flex-column flex-grow-1">
+                                        <Card className="h-100 d-flex flex-column">
+                                            <Card.Img variant="top" src={card.image} alt={card.title} className="card-img-top" style={{ height: '200px', objectFit: 'cover' }} />
+                                            <div className="d-flex flex-column flex-grow-1">
                                                 <Card.Body className="d-flex flex-column flex-grow-1">
-                                                    <Card.Title className="text-left">{card.title}</Card.Title>
-                                                    <Card.Subtitle className="mb-2 text-muted">{card.subtitle}</Card.Subtitle>
-                                                    <Card.Text className="flex-grow-1">{card.description}</Card.Text>
+                                                    <div className="d-flex flex-column  blog-card-home-body-footer">
+                                                        <Card.Title className="text-left mb-2">{card.title}</Card.Title>
+                                                        <Card.Subtitle className="mb-3 text-muted">{card.subtitle}</Card.Subtitle>
+                                                        <Card.Text className="flex-grow-1 mb-3" style={{ minHeight: '80px' }}>{card.description}</Card.Text>
+                                                    </div>
                                                 </Card.Body>
-
-                                                {/* Footer ensures button stays at the bottom */}
                                                 <Card.Footer className="mt-auto">
-                                                    <Button variant="primary" className=" readmore-bloging-home-btn">
+                                                    <Button variant="primary" className="w-50 readmore-bloging-home-btn">
                                                         Read more
                                                     </Button>
                                                 </Card.Footer>

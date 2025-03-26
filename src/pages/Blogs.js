@@ -8,6 +8,9 @@ import SixCardSlider from '../components/BlogSection/SixCardSlider';
 import NumberedSlider from '../components/BlogSection/NumberedSlider';
 
 
+import cc from '../components/images/PBT REMAIMING IMG (2).webp';
+
+
 const Blogs = () => {
 
   // Slider settings
@@ -65,10 +68,12 @@ const Blogs = () => {
 
 
 
+
+
   return (
     <>
       <section className='section-blogs-hero-container'>
-        <img src={ff} className='img-fluid w-100' />
+        {/* <img src={ff} className='img-fluid w-100' /> */}
         <div className='blog-section-hero-imagesText'>
           <div className='blog-hero-images text-center'>
             <h2>Blogs</h2>
@@ -81,6 +86,7 @@ const Blogs = () => {
 
 
       <section className='blogs-girl-with-dog-section'>
+        <img src={cc} alt="Welcome " className='left-side-half-circle-blogs' />
         <Container>
           <Row>
             <div className="col-md-6 col-sm-12">

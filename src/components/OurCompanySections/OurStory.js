@@ -1,9 +1,9 @@
 import React from 'react';
-import mm from '../img/OUR COMPANY/our company (7).png';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import cc from '../images/IMG (31).webp';
+import cc from '../images/PBT REMAIMING IMG (2).webp';
 import rr from '../images/IMG (32).webp';
 
+import mm from '../images/IMG (212).webp';
 const OurStory = () => {
     return (
 
@@ -12,15 +12,21 @@ const OurStory = () => {
 
             <Container className='our-story text-left'>
                 <Row>
-                    <Col md={5} className='d-flex justify-content-end'>
-                        <img src={mm} alt="Our Company" className="img-fluid" />
+                    <Col md={4} className=' justify-content-end'>
+                        <img src={mm} alt="Our Company" className="img-fluidd" />
                     </Col>
-                    <Col md={7} className='d-flex flex-column justify-content-center text-left'>
+                    <Col md={8} className='d-flex flex-column justify-content-center text-left our-story-text-left'>
                         <h1>Our Story</h1>
-                        <p>Panav Bio-tech was established in 2006 with the objective of animal health care and today it is one of the dominant company of healthcare products in India.
-                            We are allied with global market leading companies who are having WGMP facilities to manufacture exceptional innovative quality research products for animal health care market worldwide.
-                            With portfolio of biopreparations especially vaccines against the menacing diseases, curative solutions to specific pathologies and pioneering nutraceuticals products for the robustness and well-being of animals.
-                            Panav Bio-tech is a registered company with Government of India for the import of veterinary biologicals , therapeutic solutions and innovative nutraceuticals. We are also trained in doing liasoning for obtaining licenses from different departments of GOI, like DADF,CDSCO etc.</p>
+                        <p>
+                            Panav Bio-tech was established in 2006 with the objective of animal health care and today it is one of
+                            the dominant company of healthcare products in India.
+                            We are allied with global market leading companies who are having WGMP facilities to manufacture
+                            exceptional innovative quality research products for animal health care market worldwide.
+                            With portfolio of biopreparations especially vaccines against the menacing diseases, curative
+                            solutions to specific pathologies and pioneering nutraceuticals products for the robustness and well-
+                            being of animals.
+
+                        </p>
                         <Row>
                             <Col md={4}>
 
@@ -33,7 +39,7 @@ const OurStory = () => {
                 </Row>
             </Container>
 
-            <img src={rr} className='right-side-half-circle' />
+            <img src={cc} className='right-side-half-circle-company' />
 
         </section>
     );

@@ -1,19 +1,29 @@
 import React from 'react'
 import '../components/css/events.css';
 
-import ff from '../components/img/EVENT PAGE/event 2.png';
 import { Button, Container } from 'react-bootstrap';
+
+
+
+
 import f1 from '../components/img/EVENT PAGE/event img 1 1.png';
-import f11 from '../components/img/EVENT PAGE/Image 1 1.png';
+import f11 from '../components/images/IMG (36).webp';
 import f2 from '../components/img/EVENT PAGE/webinar 1.png';
 import f3 from '../components/img/EVENT PAGE/digital publication 1.png';
 import SixCardSlider from '../components/EventSection/SixCardSlider';
+
+import cc from '../components/images/PBT REMAIMING IMG (2).webp';
+
+
+
+
+
 
 const Events = () => {
   return (
     <>
       <section className='events-section-container'>
-        <img src={ff} className='img-fluid w-100' />
+        {/* <img src={ff} className='img-fluid w-100' /> */}
         <div className="container text-hero--events ">
           <div className="row justify-content-center text-center">
             <div className="col-md-12 text-center confrence-events-sections">
@@ -27,6 +37,7 @@ const Events = () => {
       </section>
 
       <section className='our-last-year-section-cont'>
+        <img src={cc} alt="Welcome " className='left-side-half-circle-our-last-year-section' />
         <Container>
           <div className="row justify-content-center">
             <div className="col-md-5 p-0">
@@ -39,6 +50,7 @@ const Events = () => {
             </div>
           </div>
         </Container>
+        <img src={cc} alt="Welcome " className='right-side-half-circle-our-last-year-section' />
       </section>
 
 
