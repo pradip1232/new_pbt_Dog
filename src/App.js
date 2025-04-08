@@ -15,6 +15,8 @@ import ProductDetails from './pages/ProductDetails';
 import BlogDetails from './pages/BlogDetails';
 import Dashboard from './pages/Dashboard';
 import ColdChain from './pages/ColdChain';
+import FileNotFound from './components/FileNotFound';
+import AdminDashboard from './components/AdminDashboard/AdminDashboard';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -37,11 +39,11 @@ function App() {
 
 function MainLayout() {
   const location = useLocation();
-  const isDashboard = location.pathname === "/dashboard";
+  const isAdminRoute = location.pathname.startsWith("/admin");
 
   return (
     <>
-      {!isDashboard && <NavbarComponent />}
+      {!isAdminRoute && <NavbarComponent />}
 
       <Routes>
         {/* <Route path="upcoming" element={<UpcomingPage />} /> */}
@@ -56,9 +58,11 @@ function MainLayout() {
         <Route path="/research-and-innovation" element={<Research />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/cold-chain-management" element={<ColdChain />} />
+        <Route path="/admin/*" element={<AdminDashboard />} />
+        <Route path="*" element={<FileNotFound />} />
       </Routes>
 
-      {!isDashboard && <Footer />}
+      {!isAdminRoute && <Footer />}
     </>
   );
 }

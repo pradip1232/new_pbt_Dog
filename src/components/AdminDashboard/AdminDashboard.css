@@ -1,0 +1,83 @@
+.admin-dashboard {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.admin-sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: fixed; /* Fixed position */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.admin-content {
+    margin-left: 250px; /* Leave space for the sidebar */
+    padding: 20px;
+    flex-grow: 1; /* Allow content to take remaining space */
+    overflow-y: auto; /* Allow scrolling in the content area */
+}
+
+.admin-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-sidebar ul li {
+    margin: 10px 0;
+}
+
+.admin-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.admin-sidebar ul li a:hover {
+    color: #007bff;
+}
+
+.admin-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-details {
+    cursor: pointer;
+}
+
+.admin-dropdown {
+    position: absolute;
+    right: 20px;
+    top: 50px; /* Adjust based on your top bar height */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure dropdown is above other content */
+}
+
+.admin-dropdown p {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.admin-dropdown p:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        width: 100%; /* Full width on smaller screens */
+        position: relative; /* Change to relative */
+        height: auto; /* Auto height */
+    }
+
+    .admin-content {
+        margin-left: 0; /* No margin on smaller screens */
+    }
+} 

@@ -133,6 +133,7 @@
 .form-background .form-label {
   align-items: center !important;
   text-align: left !important;
+  color: white;
 }
 .form-background button {
   background-color: white;
