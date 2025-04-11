@@ -4,22 +4,23 @@ import { Col, Row } from "react-bootstrap";
 const ProductFilterPage = () => {
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
-    const [totalProducts, setTotalProducts] = useState(0); // Store total count
+    const [totalProducts, setTotalProducts] = useState(0);
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [searchTerm, setSearchTerm] = useState("");
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    // Fetch categories and products from backend
     useEffect(() => {
         const fetchCategories = async () => {
             try {
                 const response = await fetch("http://localhost/pbt/get_categories.php");
-                const Cate_text = await response.text();
-                // console.log("Raw Response category:", Cate_text);
-                const data = JSON.parse(Cate_text);
+                const text = await response.text();
+                // console.log("Raw Response category:", text);
+                const data = JSON.parse(text);
                 setCategories(data);
             } catch (err) {
-                // console.error("Error parsing categories:", err.message);
+                console.error("Error parsing categories:", err.message);
                 setError("Failed to fetch or parse categories.");
             }
         };
@@ -27,15 +28,15 @@ const ProductFilterPage = () => {
         const fetchProducts = async () => {
             try {
                 const response = await fetch("http://localhost/pbt/get_products.php");
-                const text = await response.text(); // Log raw text
-                // console.log("Raw Response products :  ", text);
-                const data = JSON.parse(text); // Parse manually
-                const total = data.total_products;
-                // console.log("TOTAL ", total);
-                setTotalProducts(data.total);
-                setProducts(data.products);
+                const text = await response.text();
+                // console.log("Raw Response products:", text);
+
+                const data = JSON.parse(text);
+                // console.log("Parsed Products:", data.data);
+                setTotalProducts(data.total_products || 0);
+                setProducts(data.data || []);
             } catch (err) {
-                console.log("Error parsing products:", err.message);
+                console.error("Error parsing products:", err.message);
                 setError("Failed to fetch or parse products.");
             }
         };
@@ -46,10 +47,10 @@ const ProductFilterPage = () => {
             setLoading(false);
         };
 
-
         fetchData();
     }, []);
 
+    // Filter products by category and search term
     const filteredProducts = products.filter((product) => {
         const matchesCategory =
             selectedCategory === "All" || product.category_id === selectedCategory;
@@ -59,14 +60,15 @@ const ProductFilterPage = () => {
         return matchesCategory && matchesSearch;
     });
 
+    // Loading state
     if (loading) {
         return <div className="text-center">Loading...</div>;
     }
 
+    // Error state
     if (error) {
         return <div className="text-danger text-center">Error: {error}</div>;
     }
-
 
 
     // useEffect(() => {

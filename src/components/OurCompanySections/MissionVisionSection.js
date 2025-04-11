@@ -71,11 +71,11 @@ const MissionVisionSection = () => {
             <Container fluid className="mission-vision-section ">
                 <Row className="align-items-center">
                     {/* Cards Section */}
-                    <Col lg={8} md={12} className="mb-4 justify-content-end ">
+                    <Col lg={12} md={12} className="justify-content-end ">
                         <Row className='mx-5'>
                             <h2 className="text-left mb-4">OUR MISSION | OUR VISION</h2>
                             {/* Vision Card */}
-                            <Col md={6} xs={12} className="mb-4">
+                            <Col md={4} xs={12} className=" vision-card-company">
                                 <Card className="mission-vision-card shadow">
                                     <div className="icon-container">
                                         {/* <i className="bi bi-lightbulb-fill icon-style"></i> */}
@@ -91,9 +91,12 @@ const MissionVisionSection = () => {
                                     </Card.Body>
                                 </Card>
                             </Col>
+                            <Col md={4} className=' d-flex justify-content-center'>
+                                <img src={missionImage} alt="Mission Vision" fluid className="right-side-image" />
 
+                            </Col>
                             {/* Mission Card */}
-                            <Col md={6} xs={12} className="mb-4">
+                            <Col md={4} xs={12} className="mb-44444 mission-card-company">
                                 <Card className="mission-vision-card shadow">
                                     <div className="icon-container">
                                         {/* <i className="bi bi-flag-fill icon-style"></i> */}
@@ -114,10 +117,9 @@ const MissionVisionSection = () => {
                     </Col>
 
                     {/* Right-Side Image Section */}
-                    <Col lg={4} md={12} className="image-container justify-content-center ">
-                        {/* <Image src={missionImage} alt="Mission Vision" fluid className="right-side-image" /> */}
+                    {/* <Col lg={4} md={12} className="image-container justify-content-center ">
                         <img src={missionImage} alt="Mission Vision" fluid className="right-side-image" />
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
 

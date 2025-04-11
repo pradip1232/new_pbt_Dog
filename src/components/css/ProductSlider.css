@@ -48,7 +48,7 @@
 }
 
 .product-slider-home .product-card .card-header img {
-  object-fit: fill;
+  object-fit: scale-down;
 }
 .product-slider-home .product-card {
   /* padding: 15px; */

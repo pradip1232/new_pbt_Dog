@@ -85,6 +85,7 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #ddd;
+  padding: 0 10rem 0 0;
 }
 
 .text-area-home-heading {

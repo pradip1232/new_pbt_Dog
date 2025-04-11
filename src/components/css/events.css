@@ -37,6 +37,13 @@
   z-index: 2;
 }
 
+.events-our-last-year-row {
+  height: 20rem;
+}
+.events-our-last-year-row img {
+  width: 100%;
+  height: 100%;
+}
 .events-section-container .text-hero--events {
   padding: 0 15rem;
   position: absolute;

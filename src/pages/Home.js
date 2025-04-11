@@ -24,7 +24,7 @@ function Home() {
             <ProductSlider />
             <ProductSpotlight />
             {/* <MarketLeadership /> */}
-            {/* <StatisticsSection /> */}
+            <StatisticsSection />
             <UnlockingSlider />
             <BlogSlider />
 

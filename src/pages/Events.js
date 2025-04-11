@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import '../components/css/events.css';
 
-import { Button, Container } from 'react-bootstrap';
+import { Button, Container, Modal } from 'react-bootstrap';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 import f1 from '../components/img/EVENT PAGE/event img 1 1.png';
-import f11 from '../components/images/IMG (36).webp';
+import f11 from '../components/images/Image 1.JPG';
 import f2 from '../components/img/EVENT PAGE/webinar 1.png';
 import f3 from '../components/img/EVENT PAGE/digital publication 1.png';
 import SixCardSlider from '../components/EventSection/SixCardSlider';
 
 import cc from '../components/images/PBT REMAIMING IMG (2).webp';
 
+import video from '../components/images/ri_video-fill.png';
+import { PlayCircle } from 'lucide-react';
 
-
-
+import vvv from '../components/images/events_vdd/Video for top .mp4';
 
 
 
@@ -95,6 +96,16 @@ const Events = () => {
 
 
 
+
+
+
+
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
+
   return (
     <>
       <section className='events-section-container'>
@@ -114,7 +125,7 @@ const Events = () => {
       <section className='our-last-year-section-cont'>
         <img src={cc} alt="Welcome " className='left-side-half-circle-our-last-year-section' />
         <Container>
-          <div className="row justify-content-center">
+          <div className="row justify-content-center events-our-last-year-row">
             <div className="col-md-5 p-0">
               <img src={f11} className="img-fluid w-100" />
             </div>
@@ -122,10 +133,50 @@ const Events = () => {
               <h2 className="text-centerr">Our Last Year Event</h2>
               <p>PANAV BIOTECH IN ASSOCIATION WITH PETS PRACTITIONERS ASSOCIATION OF MUMBAI (PPAM) ORGANIZED PANAV BIOTECH SYMPOSIUM 2023</p>
               <p>Panav Biotech and Candioli Pharma in association with PETS PRACTITIONERS ASSOCIATION OF MUMBAI (PPAM) Organized Panav Biotech Symposium 2023 on New Diagnosis and Management of Chronic Kidney Disease (CKD) & Chronic Pain. The event was held at the Radisson Blu Mumbai, and over 200 veterinarians attended the event.</p>
+              {/* <img src={video} className="img-fluid w-100" /> */}
+              <Button
+                variant="light"
+                onClick={handleShow}
+                className="d-flex align-items-center justify-content-center border rounded p-0 float-right right-0 position-absulte"
+                style={{
+                  width: '31px',
+                  height: '31px',
+                  backgroundColor: 'white',
+                  margin: "0 0 10px auto",
+
+
+                }}
+              >
+                <i className="bi bi-play-fill" style={{ fontSize: '1.1rem' }}></i>
+              </Button>
+              {/* <PlayCircle size={50} /> */}
             </div>
           </div>
         </Container>
         <img src={cc} alt="Welcome " className='right-side-half-circle-our-last-year-section' />
+
+
+
+        {/* modal for videos  */}
+        <Modal show={show} onHide={handleClose} centered size="lg">
+          <Modal.Body className="p-0">
+            <div className="ratio ratio-16x9">
+              <video
+                width="100%"
+                height="auto"
+                autoPlay
+                controls
+                controlsList="nodownload fullscreen noremoteplayback noplaybackrate novolume"
+                style={{
+                  pointerEvents: 'auto',
+                }}
+              >
+                <source src={vvv} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </Modal.Body>
+        </Modal>
       </section>
 
 

@@ -172,7 +172,8 @@
 /* Overlay Container */
 .modran-image-colomn .four-cards-text-research img {
   color: black;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  object-fit: fill;
 }
 .modran-image-colomn .four-cards-text-research h5 {
   font-family: Poppins;
@@ -253,6 +254,11 @@
 }
 
 @media (max-width: 768px) {
+  .research-and-innovation-section-hero hr {
+    color: white;
+    width: auto;
+    margin: 0 auto;
+  }
   .care-box {
     margin-bottom: 15px;
   }

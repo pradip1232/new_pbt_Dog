@@ -5,7 +5,15 @@ import '../components/css/research.css';
 import mask from '../components/img/Mask group.png';
 import mm from '../components/img/Modern abstract four elements infographic template 1.png';
 
-import f1 from '../components/images/IMG (220).webp'; 
+import f1 from '../components/images/IMG (220).webp';
+
+
+import i1 from '../components/images/icons 1 1-1.webp';
+import i2 from '../components/images/icons 1 1-2.webp';
+import i3 from '../components/images/icons 1 1-3.webp';
+import i4 from '../components/images/icons 1 1.webp';
+
+
 const Research = () => {
   const cardData = [
     {
@@ -80,7 +88,7 @@ const Research = () => {
                 {/* Predict */}
                 <Col xs={6} className="mb-3">
                   <div className="care-box text-center">
-                    <img src={f1} alt="Predict" className="mb-2" />
+                    <img src={i4} alt="Predict" className="mb-2" />
                     <h5 className="fw-bold">PREDICT</h5>
                   </div>
                 </Col>
@@ -88,7 +96,7 @@ const Research = () => {
                 {/* Detect */}
                 <Col xs={6} className="mb-3">
                   <div className="care-box text-center">
-                    <img src={f1} alt="Detect" className="mb-2" />
+                    <img src={i3} alt="Detect" className="mb-2" />
                     <h5 className="fw-bold">DETECT</h5>
                   </div>
                 </Col>
@@ -96,7 +104,7 @@ const Research = () => {
                 {/* Treat */}
                 <Col xs={6}>
                   <div className="care-box text-center">
-                    <img src={f1} alt="Treat" className="mb-2" />
+                    <img src={i1} alt="Treat" className="mb-2" />
                     <h5 className="fw-bold">TREAT</h5>
                   </div>
                 </Col>
@@ -104,7 +112,7 @@ const Research = () => {
                 {/* Prevent */}
                 <Col xs={6}>
                   <div className="care-box text-center">
-                    <img src={f1} alt="Prevent" className="mb-2" />
+                    <img src={i2} alt="Prevent" className="mb-2" />
                     <h5 className="fw-bold">PREVENT</h5>
                   </div>
                 </Col>

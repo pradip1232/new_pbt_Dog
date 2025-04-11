@@ -1,27 +1,30 @@
 .about-us-section {
   position: relative;
-  background: url("../images/IMG\ PBT.webp") no-repeat center center;
+  background: url("../images/IMG%20PBT.webp") no-repeat center center;
   background-size: cover;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
   /* opacity: 0.6; */
 }
 
-.about-us-section::before {
+.about-us-section::before { 
   content: "";
   position: absolute;
   inset: 0;
+  background-color: var(--primary-color);
+  z-index: 0;
+  /* Optional: adjust opacity if needed */
   opacity: 0.6;
-  background: var(--primary-color);
 }
+
 .about-us-section > * {
   position: relative;
   z-index: 1;
 }
+
 
 .about-us-section .section-title {
   font-family: Poppins;

@@ -6,10 +6,6 @@ import '../css/CompanySection.css'; // Optional CSS for custom styling
 import mm from '../images/IMG (209).webp';
 
 
-
-import f1 from '../images/IMG (219).webp';
-import f2 from '../images/IMG (220).webp';
-import f3 from '../images/IMG (221).webp';
 const CompanySection = () => {
     return (
         <>
@@ -29,42 +25,7 @@ const CompanySection = () => {
                                 </div>
                             </div>
                         </div>
-                        <Container className="text-center our-cpmany-card-3">
-                            <Row className="justify-content-center">
-                                <Col md={4} className="mb-4 card-our-company2">
-                                    <Card className="info-card shadow">
-                                        <Card.Body>
-                                            <div className="card-icon">
-                                                <img src={f1} alt="To Pursue Perfection" />
-                                            </div>
-                                            <Card.Title>To Pursue Perfection</Card.Title>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-
-                                <Col md={4} className="mb-4 card-our-company2">
-                                    <Card className="info-card shadow">
-                                        <Card.Body>
-                                            <div className="card-icon">
-                                                <img src={f2} alt="To Command Excellence" />
-                                            </div>
-                                            <Card.Title>To Command Excellence</Card.Title>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-
-                                <Col md={4} className="mb-4 card-our-company2">
-                                    <Card className="info-card shadow">
-                                        <Card.Body>
-                                            <div className="card-icon">
-                                                <img src={f3} alt="To Be Assured Care" />
-                                            </div>
-                                            <Card.Title>To Be Assured Care</Card.Title>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                            </Row>
-                        </Container>
+                       
                     </div>
                 </div>
             </section>

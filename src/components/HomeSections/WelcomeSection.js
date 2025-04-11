@@ -15,7 +15,7 @@ import dfdf from '../images/IMG (72).webp';
 
 import cc from '../images/PBT REMAIMING IMG (2).webp';
 
-
+import vvvvv from '../images/WELCOME TO PBT DNA VIDEO.mp4';
 import dog from '../img/HOMEPAGE/homepage (21).png';
 function WelcomeSection() {
 
@@ -36,26 +36,29 @@ function WelcomeSection() {
                 <Container>
                     <Row className="d-flex align-items-center justify-content-center mb-5 position-relative welcome-section">
                         {/* Left Content and Text */}
-                        <Col lg={10} md={12} className="d-flex align-items-center home-welcome-row content-section">
+                        <Col lg={12} md={12} className="d-flex align-items-center home-welcome-row content-section">
                             <Row>
-                                <Col md={5} className="welcome-home-heading text-left">
+                                <Col md={6} className="welcome-home-heading text-left">
                                     <h1 className="fw-boldd">WELCOME TO</h1>
                                     <h2 className="fw-boldd">PANAV BIO-TECH</h2>
                                 </Col>
-                                <Col md={6} className="position-relative text-content-container">
-                                    <div className="text-content">
-                                        <p className="text-justify">
-                                            <b> Panav Biotech </b>: Enhancing Animal Health, Enriching Lives Our corporate philosophy is to create awareness about the significance of animal health products in their lives and provide the animal kingdom with high-quality products at accessible prices to improve their quality of life.
-                                            <br /> <br />
+                                <Col md={6} className="p-0 position-relativee text-content-container">
+                                    <video src={vvvvv} className="w-100 video-background" autoPlay loop muted playsInline></video>
+
+                                    <div className="text-content-overlay text-white">
+                                        <p className="text-justify m-0">
+                                            <b>Panav Biotech</b>: Enhancing Animal Health, Enriching Lives. Our corporate philosophy is to create awareness about the significance of animal health products in their lives and provide the animal kingdom with high-quality products at accessible prices to improve their quality of life.
+                                            <br /><br />
                                             Our values, including integrity, excellence, loyalty, trust, and appreciation, distinguish Panav Biotech as a prominent entity in the veterinary industry.
                                         </p>
                                     </div>
                                 </Col>
+
                             </Row>
                             {/* Dog Image Positioned Outside */}
                         </Col>
                     </Row>
-                    <img src={dog} className='img-fluid dog_img-home2' />
+                    {/* <img src={dog} className='img-fluid dog_img-home2' /> */}
                 </Container>
             </section>
 

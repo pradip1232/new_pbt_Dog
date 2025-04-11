@@ -12,7 +12,7 @@
   flex-direction: column;
 
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
   height: 100%;
   padding: 0;
 }
@@ -23,18 +23,26 @@
   justify-content: center;
   gap: 10px;
   margin-bottom: 10px;
-  height: 80%;
+  height: 75%;
 }
 
-.product-img {
-  width: 100%;
-  height: auto;
+.product-spotlight .product-img {
+  /* width: 100%;
+  height: auto; */
+  margin-top: 47px;
+  padding-top: 44px;
   object-fit: none;
 }
 
 .product-description {
   background-color: #eeeeee;
   padding-left: 20px;
+  height: 22%;
+  align-items: center;
+  display: flex;
+  column-gap: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .product-description h5 {
@@ -66,6 +74,12 @@
 }
 
 .spotlight-title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
   font-weight: bold;
   margin-bottom: 15px;
 }

@@ -13,6 +13,7 @@ function CarouselComponent() {
             id: 1,
             image: dog,
             title: 'Pioneering Healthcare Innovation',
+            // title: 'Pioneering Healthcare Innovation',
             description: 'As a leader in the Indian healthcare industry, PANAV BIO TECH is dedicated to pushing the boundaries of medical science.',
         },
         {

@@ -85,8 +85,8 @@ const InfoSection = () => {
 
       <section className="veterinary-section-company">
         <Container >
-          <Row className="align-items-stretch text-center">
-            <Col lg={4} md={6} sm={12} className="mb-4">
+          <Row className="align-items-stretch justify-content-center text-center">
+            <Col  md={3} sm={12} className="mb-4">
               <Card className="info-card h-100 d-flex flex-column">
                 <div className="icon-circle">
                   {/* <i className="fas fa-user-md"></i> */}
@@ -101,7 +101,7 @@ const InfoSection = () => {
               </Card>
             </Col>
 
-            <Col lg={4} md={6} sm={12} className="mb-4">
+            <Col  md={3} sm={12} className="mb-4">
               <Card className="info-card h-100 d-flex flex-column">
                 <div className="icon-circle">
                   {/* <i className="fas fa-store"></i> */}
@@ -116,7 +116,7 @@ const InfoSection = () => {
               </Card>
             </Col>
 
-            <Col lg={4} md={6} sm={12} className="mb-4">
+            <Col  md={3} sm={12} className="mb-4">
               <Card className="info-card h-100 d-flex flex-column">
                 <div className="icon-circle">
                   {/* <i className="fas fa-clinic-medical"></i> */}

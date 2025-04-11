@@ -12,7 +12,7 @@ import f3 from '../images/IMG (76).webp';
 
 
 const UnlockingSlider = () => {
-    const cardData = [
+    const cardData = [  
         {
             image: f1,
             title: 'Blog',

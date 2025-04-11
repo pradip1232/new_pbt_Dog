@@ -83,7 +83,7 @@
   position: absolute;
   inset: 0;
   opacity: 0.6;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
 }
 .divisions-section > * {
   position: relative;

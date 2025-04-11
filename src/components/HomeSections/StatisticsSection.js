@@ -10,6 +10,17 @@ import f2 from '../images/1 (4).webp';
 import f3 from '../images/1 (5).webp';
 import f4 from '../images/1 (6).webp';
 
+
+
+
+
+
+
+import ii1 from '../images/IMG (77).webp';
+import ii2 from '../images/IMG (115).webp';
+import ii3 from '../images/IMG (116).webp';
+import ii4 from '../images/IMG (117).webp';
+
 // Statistics data
 const statistics = [
     {
@@ -44,6 +55,8 @@ const statistics = [
 
 const StatisticsSection = () => {
     return (
+
+
         // <Container  className="statistics-section mt-5">
         //     <Row>
         //         {statistics.map((stat) => (
@@ -61,42 +74,54 @@ const StatisticsSection = () => {
         // </Container>
         <Container className="statistics-section-home mt-5">
             <Row>
-                <Col xs={12} sm={6} md={3} className="state-card-colmn-home">
+                <Col xs={12} sm={6} md={3} className="state-card-colmn-home state-card-colmn-home-1">
                     <Card className="stat-card">
-                        <Card.Img variant="top" src={f1} className="stat-image" />
-                        <Card.Body className="text-center stat-body">
-                            <div className="stat-icon">👥</div>
-                            <Card.Title className="stat-title">MARKET LEADERSHIP</Card.Title>
-                        </Card.Body>
-                    </Card>
-                </Col>
-
-                <Col xs={12} sm={6} md={3} className="state-card-colmn-home">
-                    <Card className="stat-card p-0">
                         <Card.Img variant="top" src={f2} className="stat-image" />
+                        <Card.ImgOverlay className="stat-image-overlay text-whitee text-center">
+                            <img src={ii2} className="stat-image-overlay-icon" />
+                        </Card.ImgOverlay>
                         <Card.Body className="text-center stat-body">
-                            <div className="stat-icon">🐕</div>
-                            <Card.Title className="stat-title">VETS</Card.Title>
+                            {/* <div className="stat-icon">👥</div> */}
+                            <Card.Title className="stat-title">Market Leadership in the Domestic Veterinary Sector</Card.Title>
                         </Card.Body>
                     </Card>
                 </Col>
 
-                <Col xs={12} sm={6} md={3} className="state-card-colmn-home">
-                    <Card className="stat-card">
+                <Col xs={12} sm={6} md={3} className="state-card-colmn-home state-card-colmn-home-2">
+                    <Card className="stat-card p-0">
                         <Card.Img variant="top" src={f3} className="stat-image" />
+                        <Card.ImgOverlay className="stat-image-overlay text-whitee text-center">
+                            <img src={ii3} className="stat-image-overlay-icon" />
+                        </Card.ImgOverlay>
                         <Card.Body className="text-center stat-body">
-                            <div className="stat-icon">📦</div>
-                            <Card.Title className="stat-title">DISTRIBUTOR</Card.Title>
+                            {/* <div className="stat-icon">🐕</div> */}
+                            <Card.Title className="stat-title">Over 100+ stockists across India</Card.Title>
                         </Card.Body>
                     </Card>
                 </Col>
 
-                <Col xs={12} sm={6} md={3} className="state-card-colmn-home">
+                <Col xs={12} sm={6} md={3} className="state-card-colmn-home state-card-colmn-home-3">
                     <Card className="stat-card">
                         <Card.Img variant="top" src={f4} className="stat-image" />
+                        <Card.ImgOverlay className="stat-image-overlay text-whitee text-center">
+                            <img src={ii1} className="stat-image-overlay-icon" />
+                        </Card.ImgOverlay>
                         <Card.Body className="text-center stat-body">
-                            <div className="stat-icon">🏥</div>
-                            <Card.Title className="stat-title">CLINICS</Card.Title>
+                            {/* <div className="stat-icon">📦</div> */}
+                            <Card.Title className="stat-title">Over 4,000 encompassing Veterinary Hospitals and Veterinary clinics</Card.Title>
+                        </Card.Body>
+                    </Card>
+                </Col>
+
+                <Col xs={12} sm={6} md={3} className="state-card-colmn-home state-card-colmn-home-4">
+                    <Card className="stat-card">
+                        <Card.Img variant="top" src={f1} className="stat-image" />
+                        <Card.ImgOverlay className="stat-image-overlay text-whitee text-center">
+                            <img src={ii4} className="stat-image-overlay-icon" />
+                        </Card.ImgOverlay>
+                        <Card.Body className="text-center stat-body">
+                            {/* <div className="stat-icon">🏥</div> */}
+                            <Card.Title className="stat-title">Over 5000+ Veterinarians use our product</Card.Title>
                         </Card.Body>
                     </Card>
                 </Col>
