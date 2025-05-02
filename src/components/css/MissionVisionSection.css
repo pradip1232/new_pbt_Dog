@@ -106,6 +106,7 @@
   font-family: Poppins;
   font-weight: 600;
   font-size: 30px;
+  text-transform: capitalize;
   line-height: 45px;
   letter-spacing: 0%;
   text-align: center;
@@ -121,6 +122,14 @@
 }
 .trust-section-company h2 {
   color: white;
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
 }
 .trust-line-container {
   display: flex;

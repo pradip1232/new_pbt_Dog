@@ -2,10 +2,14 @@ import React, { useEffect, useState, useRef } from 'react';
 import '../css/MilestoneChart.css';
 
 const milestones = [
-    { year: 20026, positionPercent: 0.1 },  // 10% along the path
+    { year: 2002, positionPercent: 0.1 },  // 10% along the path
     { year: 2010, positionPercent: 0.3 },  // 30% along the path
     { year: 2011, positionPercent: 0.5 },  // 50% along the path
     { year: 2014, positionPercent: 0.7 },  // 70% along the path
+    { year: 2016, positionPercent: 0.7 },  // 70% along the path
+    { year: 2018, positionPercent: 0.7 },  // 70% along the path
+    { year: 2020, positionPercent: 0.7 },  // 70% along the path
+    { year: 2025, positionPercent: 0.7 },  // 70% along the path
 ];
 
 const MilestoneChart = () => {
@@ -41,8 +45,8 @@ const MilestoneChart = () => {
                     key={index}
                     className="milestone"
                     style={{
-                        top: `${milestone.y - 40}px`, // Adjust y position (-40 to center the circle)
-                        left: `${milestone.x - 40}px`, // Adjust x position (-40 to center the circle)
+                        top: `${milestone.y - 40}px`,
+                        left: `${milestone.x - 40}px`,
                     }}
                 >
                     {/* Display the year inside the circle */}

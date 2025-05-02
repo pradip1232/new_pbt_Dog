@@ -86,8 +86,7 @@ const MissionVisionSection = () => {
                                     </div>
                                     <Card.Body>
                                         <Card.Text className="text-center">
-                                            Lorem Ipsum is simply dummy text of ndustry. Lorem Ipsum has been the industry's standard dummy text since the 1500s.
-                                        </Card.Text>
+                                            Our vision is to transform the landscape of animal healthcare by pioneering innovative and effective pharmaceutical solutions. We are committed to enhancing the quality of life for pets through continuous research, development, and delivery of high-quality, safe, and effective medications                                        </Card.Text>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -108,8 +107,7 @@ const MissionVisionSection = () => {
                                     </div>
                                     <Card.Body>
                                         <Card.Text className="text-center">
-                                            Lorem Ipsum is simply dum my text of the printing and typesetting industry. It has been the industry's standard since the 1500s.
-                                        </Card.Text>
+                                            To enhance the health and well-being of animals by providing innovative, high-quality, and sustainable veterinary pharmaceutical solutions. We are committed to partnering with veterinarians, livestock farmers, and pet owners to ensure a healthier animal future and a safer food chain for society.                                        </Card.Text>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -219,7 +217,10 @@ const MissionVisionSection = () => {
                                                     position: 'absolute',
                                                     top: state.top,
                                                     left: `calc(${state.left} + 20px)`,
-                                                    backgroundColor: 'rgba(0,0,0,0.8)',
+                                                    backgroundColor: 'white',
+                                                    color: 'black',
+                                                    fontSize: '14px',
+                                                    fontWeight: '400',
                                                     padding: '5px 10px',
                                                     borderRadius: '4px',
                                                     zIndex: 100
