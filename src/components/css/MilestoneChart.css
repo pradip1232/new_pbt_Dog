@@ -1,40 +1,156 @@
+/* === Container === */
 .milestone-container {
   position: relative;
-  width: 100vw;
-  height: 300px;
-  margin: auto;
+  background: url("../images/IMG (206).webp") center/cover no-repeat;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.milestone {
+/* === Overlay with non-intrusive background === */
+.milestone-overlay {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.milestone-overlay::before {
+  content: "";
   position: absolute;
-  width: 80px;
-  height: 80px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    var(--primary-rgb),
+    0.5
+  ); /* use RGB format if available */
+  z-index: 0;
+  pointer-events: none; /* ensures it doesn't block interactions */
+}
+
+.milestone-overlay * {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Title === */
+.milestone-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* === Image Wrapper === */
+.milestone-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1260px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.milestone-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* === Milestone Line === */
+.milestone-line-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* === Milestone Circle === */
+.milestone {
+  width: 154px;
+  height: 154px;
   background-color: white;
   border-radius: 50%;
-  border: 2px solid #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  z-index: 1;
+  color: #0b2a4a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
 }
 
-.milestone-line {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 2;
-  stroke-dasharray: 4;
-}
-
+/* === Milestone Year Text === */
 .milestone-year {
-  font-size: 16px;
-  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
-/* svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
+/* === Description === */
+.milestone-description {
+  margin-top: 20px;
+  font-size: 14px;
+  max-width: 700px;
+  text-align: left;
+}
+
+/* === Divider === */
+.milestone-container hr {
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 70%;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .milestone {
+    width: 100px;
+    height: 100px;
+  }
+
+  .milestone-year {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .milestone {
+    width: 70px;
+    height: 70px;
+  }
+
+  .milestone-year {
+    font-size: 16px;
+  }
+
+  .milestone-title {
+    font-size: 20px;
+  }
+
+  .milestone-description {
+    font-size: 12px;
+    text-align: center;
+  }
+}

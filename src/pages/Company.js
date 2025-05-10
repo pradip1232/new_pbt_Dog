@@ -13,7 +13,7 @@ const Company = () => {
       <OurStory />
       <MissionVisionSection />
       <ColdChainSection />
-      <MilestoneChart />
+      {/* <MilestoneChart /> */}
       <InfoSection />
     </div>
   )
