@@ -1,77 +1,66 @@
 .product-details-section {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
-
 
 .product-details-section .product-details-img {
-    align-items: end;
-    text-align: end;
-    object-fit: cover;
-    width: 378px;
-    height: 443px;
+  align-items: end;
+  text-align: end;
+  object-fit: cover;
+  width: 378px;
+  height: 443px;
 }
 
-
 .product-details-section .product-details-content h4 {
-    font-family: Poppins;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 49.24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: var(--primary-color);
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 49.24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--primary-color);
 }
 
 .product-details-section .product-details-content .product-description {
-    background-color: white;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: justify;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    columns: black;
-
+  background-color: white;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  columns: black;
+  padding-left: 0px;
 }
 
 .product-details-section.product-details-content h6 {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: justify;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: black;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: justify;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: black;
 }
 
 .product-details-section .product-details-content .btn {
-    background-color: var(--primary-color);
-    color: var(--scondary-color);
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px #0000001A;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    /* text-align: left; */
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    border-color: var(--primary-color);
-    margin-right: 12px;
-
+  background-color: var(--primary-color);
+  color: var(--scondary-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px #0000001a;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* text-align: left; */
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border-color: var(--primary-color);
+  margin-right: 12px;
 }
 
-
-
-
-
-
-
-
-
 .accordian-section-product-details {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
