@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import '../css/MissionVisionSection.css'; // Optional custom CSS
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import missionImage from '../images/IMG (173).webp'; // Example right-side image
 
@@ -60,6 +62,9 @@ const MissionVisionSection = () => {
     };
 
 
+    const { ref: visionRef, inView: visionInView } = useInView({ triggerOnce: false });
+    const { ref: missionRef, inView: missionInView } = useInView({ triggerOnce: false });
+    const { ref: centerImageRef, inView: centerImageInView } = useInView({ triggerOnce: false });
 
 
 
@@ -74,11 +79,9 @@ const MissionVisionSection = () => {
                     <Col lg={12} md={12} className="justify-content-end ">
                         <Row className='mx-5'>
                             <h2 className="text-left mb-4">OUR MISSION | OUR VISION</h2>
-                            {/* Vision Card */}
                             <Col md={4} xs={12} className=" vision-card-company">
                                 <Card className="mission-vision-card shadow">
                                     <div className="icon-container">
-                                        {/* <i className="bi bi-lightbulb-fill icon-style"></i> */}
                                         <img src={vv} className='img-fluid icon-style' />
                                     </div>
                                     <div className="divider">
@@ -98,7 +101,6 @@ const MissionVisionSection = () => {
                             <Col md={4} xs={12} className="mb-44444 mission-card-company">
                                 <Card className="mission-vision-card shadow">
                                     <div className="icon-container">
-                                        {/* <i className="bi bi-flag-fill icon-style"></i> */}
                                         <img src={mm} className='img-fluid icon-style' />
                                     </div>
                                     <div className="divider">
@@ -242,4 +244,3 @@ const MissionVisionSection = () => {
 };
 
 export default MissionVisionSection;
-
