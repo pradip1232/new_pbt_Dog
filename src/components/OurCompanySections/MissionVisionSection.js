@@ -62,12 +62,21 @@ const MissionVisionSection = () => {
     };
 
 
-    const { ref: visionRef, inView: visionInView } = useInView({ triggerOnce: false });
-    const { ref: missionRef, inView: missionInView } = useInView({ triggerOnce: false });
-    const { ref: centerImageRef, inView: centerImageInView } = useInView({ triggerOnce: false });
 
+    const [ref, inView] = useInView({ triggerOnce: false });
 
-
+    // Animation variants for each column
+    const variants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: delay => ({
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.8,
+                delay: delay,
+            },
+        }),
+    };
 
 
 
@@ -76,42 +85,68 @@ const MissionVisionSection = () => {
             <Container fluid className="mission-vision-section ">
                 <Row className="align-items-center">
                     {/* Cards Section */}
-                    <Col lg={12} md={12} className="justify-content-end ">
-                        <Row className='mx-5'>
+                    <Col lg={12} md={12} className="justify-content-end" ref={ref}>
+                        <Row className="mx-5">
                             <h2 className="text-left mb-4">OUR MISSION | OUR VISION</h2>
-                            <Col md={4} xs={12} className=" vision-card-company">
-                                <Card className="mission-vision-card shadow">
-                                    <div className="icon-container">
-                                        <img src={vv} className='img-fluid icon-style' />
-                                    </div>
-                                    <div className="divider">
-                                        <Card.Title className="text-center">Vision</Card.Title>
-                                    </div>
-                                    <Card.Body>
-                                        <Card.Text className="text-center">
-                                            Our vision is to transform the landscape of animal healthcare by pioneering innovative and effective pharmaceutical solutions. We are committed to enhancing the quality of life for pets through continuous research, development, and delivery of high-quality, safe, and effective medications                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                            <Col md={4} className=' d-flex justify-content-center'>
-                                <img src={missionImage} alt="Mission Vision" fluid className="right-side-image" />
 
+                            {/* Vision Card */}
+                            <Col md={4} xs={12} className="vision-card-company">
+                                <motion.div
+                                    variants={variants}
+                                    initial="hidden"
+                                    animate={inView ? 'visible' : 'hidden'}
+                                    custom={0}
+                                >
+                                    <Card className="mission-vision-card shadow">
+                                        <div className="icon-container">
+                                            <img src={vv} className="img-fluid icon-style" />
+                                        </div>
+                                        <div className="divider">
+                                            <Card.Title className="text-center">Vision</Card.Title>
+                                        </div>
+                                        <Card.Body>
+                                            <Card.Text className="text-center">
+                                                Our vision is to transform the landscape of animal healthcare by pioneering innovative and effective pharmaceutical solutions. We are committed to enhancing the quality of life for pets through continuous research, development, and delivery of high-quality, safe, and effective medications.
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </motion.div>
                             </Col>
+
+                            {/* Center Image */}
+                            <Col md={4} className="d-flex justify-content-center">
+                                <motion.div
+                                    variants={variants}
+                                    initial="hidden"
+                                    animate={inView ? 'visible' : 'hidden'}
+                                    custom={0.4}
+                                >
+                                    <img src={missionImage} alt="Mission Vision" className="right-side-image" />
+                                </motion.div>
+                            </Col>
+
                             {/* Mission Card */}
                             <Col md={4} xs={12} className="mb-44444 mission-card-company">
-                                <Card className="mission-vision-card shadow">
-                                    <div className="icon-container">
-                                        <img src={mm} className='img-fluid icon-style' />
-                                    </div>
-                                    <div className="divider">
-                                        <Card.Title className="text-center">Mission</Card.Title>
-
-                                    </div>
-                                    <Card.Body>
-                                        <Card.Text className="text-center">
-                                            To enhance the health and well-being of animals by providing innovative, high-quality, and sustainable veterinary pharmaceutical solutions. We are committed to partnering with veterinarians, livestock farmers, and pet owners to ensure a healthier animal future and a safer food chain for society.                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
+                                <motion.div
+                                    variants={variants}
+                                    initial="hidden"
+                                    animate={inView ? 'visible' : 'hidden'}
+                                    custom={0.8}
+                                >
+                                    <Card className="mission-vision-card shadow">
+                                        <div className="icon-container">
+                                            <img src={mm} className="img-fluid icon-style" />
+                                        </div>
+                                        <div className="divider">
+                                            <Card.Title className="text-center">Mission</Card.Title>
+                                        </div>
+                                        <Card.Body>
+                                            <Card.Text className="text-center">
+                                                To enhance the health and well-being of animals by providing innovative, high-quality, and sustainable veterinary pharmaceutical solutions. We are committed to partnering with veterinarians, livestock farmers, and pet owners to ensure a healthier animal future and a safer food chain for society.
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </motion.div>
                             </Col>
                         </Row>
                     </Col>

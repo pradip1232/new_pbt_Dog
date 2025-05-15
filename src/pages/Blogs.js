@@ -2,16 +2,30 @@ import React from 'react'
 import '../components/css/blog.css';
 import ff from '../components/img/BLOG PAGE/blog hero sldider 2.png';
 import { Container, Row } from 'react-bootstrap';
-import mask from '../components/img/BLOG PAGE/Mask group.png';
+import maskkk from '../components/img/BLOG PAGE/Mask group.png';
 import Slider from "react-slick";
 import SixCardSlider from '../components/BlogSection/SixCardSlider';
 import NumberedSlider from '../components/BlogSection/NumberedSlider';
+
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 import cc from '../components/images/PBT REMAIMING IMG (2).webp';
 
 
-const Blogs = () => {
+const Blogs = ({ mask }) => {
+
+
+  const [ref, inView] = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
+
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 60 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+  };
 
   // Slider settings
   const settings = {
@@ -88,21 +102,40 @@ const Blogs = () => {
       <section className='blogs-girl-with-dog-section'>
         <img src={cc} alt="Welcome " className='left-side-half-circle-blogs' />
         <Container>
-          <Row>
-            <div className="col-md-6 col-sm-12">
-              <img src={mask} className='img-fluid w-100' />
-            </div>
-            <div className="col-md-6 col-sm-12 text-content-blogs2">
+          <Row ref={ref}>
+            {/* Left Column (Image) */}
+            <motion.div
+              className="col-md-6 col-sm-12"
+              variants={fadeInUp}
+              initial="hidden"
+              animate={inView ? 'visible' : 'hidden'}
+            >
+              <img src={maskkk} className='img-fluid w-100' />
+            </motion.div>
+
+            {/* Right Column (Text) */}
+            <motion.div
+              className="col-md-6 col-sm-12 text-content-blogs2"
+              variants={fadeInUp}
+              initial="hidden"
+              animate={inView ? 'visible' : 'hidden'}
+              transition={{ delay: 0.3 }}
+            >
               <span>Advancing Veterinary Care: Knowledge Hub</span>
-              {/* <h4>Your Trusted Source for Animal Healthcare Insights.</h4> */}
-              <p>At PANAV BIOTECH, we are passionate about advancing animal health and wellness. This blog is your go-to destination for insights, updates, and expert knowledge in veterinary pharmaceuticals and animal care.
-                <br />
-                <br />
-                Whether you’re a veterinarian, livestock farmer, pet owner, or industry professional, we’re here to inform you about the latest innovations, trends, and best practices in animal health. From cutting-edge research and product highlights to practical tips for improving animal care, we aim to support you every step of the way.
-                <br />
-                <br />
-                Together, let’s build a healthier and more sustainable future for animals and those who care for them. Stay tuned, stay informed, and join us in our mission to make a difference.</p>
-            </div>
+              <p>
+                At PANAV BIOTECH, we are passionate about advancing animal health and wellness.
+                This blog is your go-to destination for insights, updates, and expert knowledge
+                in veterinary pharmaceuticals and animal care.
+                <br /><br />
+                Whether you’re a veterinarian, livestock farmer, pet owner, or industry professional,
+                we’re here to inform you about the latest innovations, trends, and best practices in animal health.
+                From cutting-edge research and product highlights to practical tips for improving animal care,
+                we aim to support you every step of the way.
+                <br /><br />
+                Together, let’s build a healthier and more sustainable future for animals and those who care for them.
+                Stay tuned, stay informed, and join us in our mission to make a difference.
+              </p>
+            </motion.div>
           </Row>
         </Container>
       </section>

@@ -11,12 +11,15 @@ const ProductFilterPage = () => {
     const [error, setError] = useState(null);
 
     // Fetch categories and products from backend
+    const baseUrl = process.env.REACT_APP_BASE_URL;
+    // console.log("URL", baseUrl);
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await fetch("http://localhost/pbt/get_categories.php");
+                const response = await fetch(`${baseUrl}/get_categories.php`);
+                // const response = await fetch("http://localhost/pbt/get_categories.php");
                 const text = await response.text();
-                // console.log("Raw Response category:", text);
+                console.log("Raw Response category:", text);
                 const data = JSON.parse(text);
                 setCategories(data);
             } catch (err) {

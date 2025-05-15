@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import f from '../components/img/Group 285.png';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import '../components/css/research.css';
@@ -12,6 +12,13 @@ import i1 from '../components/images/icons 1 1-1.webp';
 import i2 from '../components/images/icons 1 1-2.webp';
 import i3 from '../components/images/icons 1 1-3.webp';
 import i4 from '../components/images/icons 1 1.webp';
+import { motion, AnimatePresence } from "framer-motion";
+
+
+import { useInView } from "react-intersection-observer";
+
+
+
 
 
 const Research = () => {
@@ -36,7 +43,27 @@ const Research = () => {
     },
   ];
 
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
+
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
+  const iconVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.3,
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    }),
+  };
 
 
   return (
@@ -76,51 +103,35 @@ const Research = () => {
 
 
       <section>
-        <Container className="py-5">
+        <Container className="py-5" ref={ref}>
           <Row className="align-items-center">
-            {/* Left Side - Predict, Detect, Treat, Prevent */}
+            {/* Left Side - Background Image and Four Icons */}
             <Col md={6} className="text-center modran-image-colomn position-relative">
-              {/* Background Image */}
               <img src={mm} className="img-fluid w-100" alt="Background" />
 
-              {/* Overlay Content */}
               <Row className="four-cards-text-research d-flex align-items-center justify-content-center">
-                {/* Predict */}
-                <Col xs={6} className="mb-3">
-                  <div className="care-box text-center">
-                    <img src={i4} alt="Predict" className="mb-2" />
-                    <h5 className="fw-bold">PREDICT</h5>
-                  </div>
-                </Col>
-
-                {/* Detect */}
-                <Col xs={6} className="mb-3">
-                  <div className="care-box text-center">
-                    <img src={i3} alt="Detect" className="mb-2" />
-                    <h5 className="fw-bold">DETECT</h5>
-                  </div>
-                </Col>
-
-                {/* Treat */}
-                <Col xs={6}>
-                  <div className="care-box text-center">
-                    <img src={i1} alt="Treat" className="mb-2" />
-                    <h5 className="fw-bold">TREAT</h5>
-                  </div>
-                </Col>
-
-                {/* Prevent */}
-                <Col xs={6}>
-                  <div className="care-box text-center">
-                    <img src={i2} alt="Prevent" className="mb-2" />
-                    <h5 className="fw-bold">PREVENT</h5>
-                  </div>
-                </Col>
+                {[{ img: i4, label: "PREDICT" },
+                { img: i3, label: "DETECT" },
+                { img: i1, label: "TREAT" },
+                { img: i2, label: "PREVENT" }].map((item, i) => (
+                  <Col xs={6} className="mb-3" key={i}>
+                    <motion.div
+                      className="care-box text-center"
+                      initial="hidden"
+                      animate={inView ? "visible" : "hidden"}
+                      custom={i}
+                      variants={iconVariants}
+                    >
+                      <img src={item.img} alt={item.label} className="mb-2" />
+                      <h5 className="fw-bold">{item.label}</h5>
+                    </motion.div>
+                  </Col>
+                ))}
               </Row>
             </Col>
 
             {/* Right Side - Text Content */}
-            <Col md={6} className='continum-colmn'>
+            <Col md={6} className="continum-colmn">
               <h2 className="text-primaryrr">Continuum of Care</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -130,7 +141,6 @@ const Research = () => {
           </Row>
         </Container>
       </section>
-
 
       <section className='animal-section-research'>
         <Container>

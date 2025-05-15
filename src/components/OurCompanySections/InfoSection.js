@@ -23,6 +23,8 @@ import dd from '../images/IMG (129).webp';
 
 
 import m1 from '../images/IMG\ \(227\).webp';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 
@@ -45,7 +47,10 @@ const InfoSection = () => {
     },
   ];
 
-
+  const [ref, inView] = useInView({
+    triggerOnce: false, // set to true if you want animation only once
+    threshold: 0.2,
+  });
 
 
 
@@ -86,7 +91,7 @@ const InfoSection = () => {
       <section className="veterinary-section-company">
         <Container >
           <Row className="align-items-stretch justify-content-center text-center">
-            <Col  md={3} sm={12} className="mb-4">
+            <Col md={3} sm={12} className="mb-4">
               <Card className="info-card h-100 d-flex flex-column">
                 <div className="icon-circle">
                   {/* <i className="fas fa-user-md"></i> */}
@@ -101,7 +106,7 @@ const InfoSection = () => {
               </Card>
             </Col>
 
-            <Col  md={3} sm={12} className="mb-4">
+            <Col md={3} sm={12} className="mb-4">
               <Card className="info-card h-100 d-flex flex-column">
                 <div className="icon-circle">
                   {/* <i className="fas fa-store"></i> */}
@@ -116,7 +121,7 @@ const InfoSection = () => {
               </Card>
             </Col>
 
-            <Col  md={3} sm={12} className="mb-4">
+            <Col md={3} sm={12} className="mb-4">
               <Card className="info-card h-100 d-flex flex-column">
                 <div className="icon-circle">
                   {/* <i className="fas fa-clinic-medical"></i> */}
