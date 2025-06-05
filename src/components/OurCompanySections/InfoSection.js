@@ -3,6 +3,7 @@ import { Container, Row, Col, Image, Card } from 'react-bootstrap';
 import '../css/InfoSection.css'; // Additional custom CSS if needed
 import 'bootstrap/dist/css/bootstrap.min.css';
 import mm from '../img/OUR COMPANY/our company (21).png';
+import Slider from "react-slick";
 
 
 
@@ -19,6 +20,11 @@ import aa from '../images/IMG (130).webp';
 import bb from '../images/IMG (131).webp';
 import cc from '../images/IMG (132).webp';
 import dd from '../images/IMG (129).webp';
+import ee from '../images/IMG (222).webp';
+
+
+
+import five from '../images/5000+ Veterinarians icon.png';
 
 
 
@@ -82,8 +88,32 @@ const InfoSection = () => {
     { name: "National Business Manager", fname: "Azeem Hadi", img: aa },
     { name: "Sales Manager", fname: "Kapil Rastogi", img: dd },
     { name: " Chief product Manager", fname: "Dr. Ashutosh Sachan", img: bb },
-    { name: "Commercial & Foreign Trade Manager", fname: "Versha Singh", img: cc },
+    { name: "Commercial & Foreign Trade Manager", fname: "Versha Singh", img: ee },
+    { name: "Senior HR Manager", fname: "Megha Shrivastav", img: cc },
   ];
+
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4, // Desktop
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992, // tablets
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576, // mobile
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   return (
 
     <>
@@ -136,6 +166,21 @@ const InfoSection = () => {
                 </Card.Body>
               </Card>
             </Col>
+            <Col md={3} sm={12} className="mb-4">
+              <Card className="info-card h-100 d-flex flex-column">
+                <div className="icon-circle">
+                  {/* <i className="fas fa-clinic-medical"></i> */}
+                  <img src={five} className='i-con-img' />
+
+                </div>
+                <Card.Body className="d-flex flex-column justify-content-center">
+                  <Card.Text>Over
+                    <strong> 5000+ Veterinarians</strong>  <br />
+                    use our product
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -184,20 +229,14 @@ const InfoSection = () => {
       </section>
 
 
-      <section className='senior-authorities-section'>
+      <section className="senior-authorities-section">
         <Container className="text-center my-5">
           <h2 className="fw-bold">SENIOR AUTHORITIES</h2>
-          <Row className="justify-content-center">
+          <Slider {...settings}>
             {authorities.map((authority, index) => (
-              <Col
-                key={index}
-                xs={12}
-                sm={6}
-                md={3}
-                className="d-flex flex-column align-items-center my-3"
-              >
+              <div key={index} className="p-3">
                 <div
-                  className="rounded-circle overflow-hidden border border-primary"
+                  className="rounded-circle overflow-hidden border border-primary mx-auto"
                   style={{ width: "120px", height: "120px" }}
                 >
                   <img
@@ -207,14 +246,12 @@ const InfoSection = () => {
                   />
                 </div>
                 <h5 className="mt-2 fw-bold">{authority.fname}</h5>
-                <p className="text-primaryy">({authority.name})</p>
-              </Col>
+                <p className="text-primary">({authority.name})</p>
+              </div>
             ))}
-          </Row>
+          </Slider>
         </Container>
-
       </section>
-
 
     </>
   );

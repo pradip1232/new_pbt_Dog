@@ -9,7 +9,7 @@ import f1 from '../images/product spotllight 1.webp';
 import f3 from '../images/product spotllight 1-1.webp';
 import f2 from '../images/product spotllight 1-2.webp';
 
-const ProductSpotlight = () => {
+const  ProductSpotlight = () => {
     return (
         <Container fluid className="product-spotlight mt-5">
             <Container>

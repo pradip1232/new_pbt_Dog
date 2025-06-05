@@ -1,328 +1,329 @@
 /* General Section Styles */
 .our-product-section-cont {
-    position: relative;
+  position: relative;
 }
 
 .our-product-images {
-    display: block;
-    object-fit: fill;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    /* Maintain aspect ratio */
+  display: block;
+  object-fit: fill;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 .our-product-section-cont-text {
-    position: relative;
-    /* top: 35%;
+  position: relative;
+  /* top: 35%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    text-align: center;
-    color: #fff;
-    /* Ensure text is readable */
+  text-align: center;
+  color: #fff;
+  /* Ensure text is readable */
 }
 
 .our-product-section-cont-text h2 {
-    font-size: 2.5rem;
-    margin: 0 auto;
+  font-size: 2.5rem;
+  margin: 0 auto;
 }
 
 .our-product-hr {
-    max-width: 80%;
-    width: 500px;
-    border: 1px solid #fff;
-    /* Adjust as needed */
-    margin: 0 auto;
+  max-width: 80%;
+  width: 500px;
+  border: 1px solid #fff;
+  /* Adjust as needed */
+  margin: 0 auto;
 }
 
 .our-product-section-text-row {
-    margin-top: -20rem;
+  margin-top: -20rem;
 }
 
 .our-product-section-cont {
-    /* padding-bottom: 10rem; */
+  /* padding-bottom: 10rem; */
 }
 
 /* Cards Section */
 .our-product-section-cards {
-    margin-top: 8rem;
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: 15px; */
-    /* Adds space between cards */
+  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 15px; */
+  /* Adds space between cards */
 }
 
 .our-product-section-cards .col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-card {
-    background-color: transparent;
-    /* No background color */
-    /* width: 18rem; */
-    /* Adjust card width */
-    height: auto;
-    border: none;
-    /* Let height adjust dynamically */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    /* Optional shadow */
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  background-color: transparent;
+  /* No background color */
+  width: 314px;
+  /* Adjust card width */
+  height: auto;
+  border: none;
+  /* Let height adjust dynamically */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* Optional shadow */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 .product-card:hover {
-    /* transform: scale(1.05);
+  /* transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); */
 }
 
 .our-product-section-cards .product-card img {
-    object-fit: contain;
-    /* Ensure the image fills without distortion */
-    width: 100%;
-    height: 200px;
-    /* Fixed image height for uniformity */
+  object-fit: contain;
+  /* Ensure the image fills without distortion */
+  width: 100%;
+  height: 200px;
+  /* Fixed image height for uniformity */
 }
 
 .our-product-section-cards .product-card button {
-    background-color: #003781;
-    /* Example primary button color */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 4px;
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+  background-color: #003781;
+  /* Example primary button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .our-product-section-cards .product-card .card-title {
-    font-family: Century Gothic;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.52px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #003781;
+  font-family: Century Gothic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.52px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #003781;
 }
 
 .product-card button:hover {
-    background-color: #0056b3;
-    /* Darker shade on hover */
+  background-color: #0056b3;
+  /* Darker shade on hover */
 }
 
 /* Card Titles */
 .product-card h5 {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    color: white;
-    /* font-weight: bold; */
-    text-align: center;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: white;
+  /* font-weight: bold; */
+  text-align: center;
 }
-
-
-
-
-
-
-
-
 
 /* product category section */
 
 .product-filter-page .category-buttons button.active {
-    background-color: var(--scondary-color);
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+  background-color: var(--scondary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .product-filter-page .search-bar input {
-    align-items: center;
-    /* text-align: center; */
-
+  align-items: center;
+  /* text-align: center; */
 }
 
 .product-filter-page .search-bar input {
-    align-items: center;
-    border-radius: 0px;
-    /* width: 400px; */
+  align-items: center;
+  border-radius: 0px;
+  /* width: 400px; */
 }
 
 .search-row-heading h4 {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    align-items: center;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  align-items: center;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .product-card-filter {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .product-card-filter:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .product-card-filter img {
-    height: 200px;
-    object-fit: cover;
+  height: 200px;
+  object-fit: cover;
 }
 
 .product-filter-page h3 {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: var(--primary-color);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--primary-color);
 }
-
-
 
 .product-filter-page .category-buttons .category-button {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    background-color: var(--primary-color);
-    color: var(--scondary-color);
-    margin-bottom: 15px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: var(--primary-color);
+  color: var(--scondary-color);
+  margin-bottom: 15px;
 }
 
-
 .product-filter-page .product-card {
-    background-color: #EEEEEE;
+  /* background-color: #eeeeee; */
+  background: linear-gradient(
+    to top,
+    rgba(238, 238, 238, 1),
+    rgba(255, 255, 255, 1)
+  );
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-filter-page .product-card img {
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 }
 
 .product-filter-page .product-card .card-title {
-    cursor: pointer;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: var(--primary-color);
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--primary-color);
 }
 
 .product-filter-page .product-card .card-text {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: black;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: black;
 }
 
 .product-filter-page .product-card .know-more-button {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    background-color: var(--primary-color);
-    box-shadow: 0px 4px 4px 0px #0000001A;
-    color: var(--scondary-color);
-
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: var(--primary-color);
+  box-shadow: 0px 4px 4px 0px #0000001a;
+  color: var(--scondary-color);
 }
 
-
-
-
+.product-filter-page .custom-product-card-colmn {
+  align-items: center;
+  text-align: center;
+}
+.product-filter-page .custom-product-card-colmn .card-img-top {
+  width: 150px;
+  height: 188px;
+}
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
+  .product-filter-page .custom-product-card-colmn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
 
-    .product-filter-page .custom-product-card-colmn {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-    }
+  .our-product-section-text-row {
+    margin-top: -13rem;
+    margin-bottom: 4rem;
+  }
 
-    .our-product-section-text-row {
-        margin-top: -13rem;
-        margin-bottom: 4rem;
-    }
+  .our-product-images {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 63vh;
+  }
 
-    .our-product-images {
-        display: block;
-        object-fit: cover;
-        max-width: 100%;
-        width: 100%;
-        height: 63vh;
-    }
+  .our-product-section-cards {
+    margin-top: 0rem;
+  }
 
-    .our-product-section-cards {
-        margin-top: 0rem;
-    }
+  .product-filter-page .product-card {
+    width: 18rem;
+    height: auto;
+    border: none;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  }
 
-    .product-filter-page .product-card {
+  .our-product-section-cont-text h2 {
+    font-size: 1.5rem;
+    /* Adjust title size */
+  }
 
-        width: 18rem;
-        height: auto;
-        border: none;
-        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-        /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
-    }
-
-    .our-product-section-cont-text h2 {
-        font-size: 1.5rem;
-        /* Adjust title size */
-    }
-
-    .our-product-hr {
-        width: 50%;
-        /* Adjust HR width */
-    }
+  .our-product-hr {
+    width: 50%;
+    /* Adjust HR width */
+  }
 }
 
 @media (max-width: 576px) {
-    .our-product-section-cont-text h2 {
-        font-size: 1.2rem;
-    }
+  .our-product-section-cont-text h2 {
+    font-size: 1.2rem;
+  }
 
-    .product-card img {
-        height: 150px;
-        /* Adjust image height for smaller screens */
-    }
+  .product-card img {
+    height: 150px;
+    /* Adjust image height for smaller screens */
+  }
 
-    .product-card h5 {
-        font-size: 0.9rem;
-        /* Reduce title font size */
-    }
+  .product-card h5 {
+    font-size: 0.9rem;
+    /* Reduce title font size */
+  }
 
-    .product-card button {
-        font-size: 0.8rem;
-        /* Adjust button size */
-    }
+  .product-card button {
+    font-size: 0.8rem;
+    /* Adjust button size */
+  }
 }

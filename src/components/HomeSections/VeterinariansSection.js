@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../css/VeterinariansSection.css';
 import { motion, useInView } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+
 
 import Group261 from '../images/IMG (203).webp';
 import Group262 from '../images/IMG (204).webp';
@@ -11,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function VeterinariansSection() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: '-100px' });
+    const navigate = useNavigate(); // ✅ navigation hook
 
     const textVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -85,7 +88,10 @@ function VeterinariansSection() {
                                         <img src={Group261} alt="Orion Division" className="circle-img" />
                                     </div>
                                     <Card.Body>
-                                        <Card.Title className="division-title">ORION DIVISION</Card.Title>
+                                        <Card.Title className="division-title"
+                                            onClick={() => navigate('/products')}
+                                            style={{ cursor: 'pointer' }}
+                                        >ORION DIVISION</Card.Title>
                                         <Card.Text>Biological & Diagnostics</Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -103,7 +109,11 @@ function VeterinariansSection() {
                                         <img src={Group262} alt="Regal Division" className="circle-img" />
                                     </div>
                                     <Card.Body>
-                                        <Card.Title className="division-title">REGAL DIVISION</Card.Title>
+                                        <Card.Title className="division-title"
+                                            onClick={() => navigate('/products')}
+                                            style={{ cursor: 'pointer' }}
+
+                                        >REGAL DIVISION</Card.Title>
                                         <Card.Text>Innovative Therapeutic Solutions</Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -121,7 +131,10 @@ function VeterinariansSection() {
                                         <img src={Group263} alt="Iris Division" className="circle-img" />
                                     </div>
                                     <Card.Body>
-                                        <Card.Title className="division-title">IRIS DIVISION</Card.Title>
+                                        <Card.Title className="division-title"
+                                            onClick={() => navigate('/products')}
+
+                                        >IRIS DIVISION</Card.Title>
                                         <Card.Text>Global Nutraceuticals</Card.Text>
                                     </Card.Body>
                                 </Card>

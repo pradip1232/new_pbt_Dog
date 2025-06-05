@@ -82,10 +82,11 @@ function WelcomeSection() {
                                         initial={{ y: 50, opacity: 0 }}
                                         animate={isInView ? { y: 0, opacity: 1 } : {}}
                                         transition={{ duration: 1, delay: 0.5 }}
+                                        className='' style={{ marginBottom: '-6px' }}
                                     >
                                         <video
                                             src={vvvvv}
-                                            className="w-100 video-background"
+                                            className="w-100 h-100 video-background"
                                             autoPlay
                                             loop
                                             muted
@@ -124,29 +125,29 @@ function WelcomeSection() {
             />
 
             {/* Product Grid Section */}
-        <Container  className="welcome-section-container my-5">
-    <motion.div
-        className="text-center my-5"
-        variants={containerVariants}
-        initial="hidden"
-        animate={isInView ? 'visible' : 'hidden'}
-    >
-        <h2 className="mb-4 home-our-product">OUR PRODUCTS</h2>
-        <Row>
-            {products.map((product, index) => (
-                <Col key={index} sm={12} md={4} lg={2} className="mb-4">
-                    <motion.div
-                        className="product-circle shadow-sm mx-auto"
-                        variants={cardVariants}
-                    >
-                        <img src={product.icon} className="product-icon-home" alt={product.name} />
-                    </motion.div>
-                    <p className="mt-2 home-product-name">{product.name}</p>
-                </Col>
-            ))}
-        </Row>
-    </motion.div>
-</Container>
+            <Container className="welcome-section-container my-5">
+                <motion.div
+                    className="text-center my-5"
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate={isInView ? 'visible' : 'hidden'}
+                >
+                    <h2 className="mb-4 home-our-product">OUR PRODUCTS</h2>
+                    <Row>
+                        {products.map((product, index) => (
+                            <Col key={index} sm={12} md={4} lg={2} className="mb-4">
+                                <motion.div
+                                    className="product-circle shadow-sm mx-auto"
+                                    variants={cardVariants}
+                                >
+                                    <img src={product.icon} className="product-icon-home" alt={product.name} />
+                                </motion.div>
+                                <p className="mt-2 home-product-name">{product.name}</p>
+                            </Col>
+                        ))}
+                    </Row>
+                </motion.div>
+            </Container>
 
         </>
     );

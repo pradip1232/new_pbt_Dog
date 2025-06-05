@@ -243,6 +243,16 @@ textarea {
   color: var(--primary-color);
 }
 
+@media (min-width: 1398px) {
+  .form-background {
+    height: 29.2rem;
+  }
+}
+/* @media (max-width: 1398px) {
+  .form-background {
+    height: 30rem;
+  }
+} */
 @media (max-width: 576px) {
   .contact-section-hero-cont img {
     position: relative;

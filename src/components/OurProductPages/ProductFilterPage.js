@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
+import img80 from '../images/IMG (81).webp';
+
 const ProductFilterPage = () => {
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
@@ -19,7 +21,7 @@ const ProductFilterPage = () => {
                 const response = await fetch(`${baseUrl}/get_categories.php`);
                 // const response = await fetch("http://localhost/pbt/get_categories.php");
                 const text = await response.text();
-                console.log("Raw Response category:", text);
+                // console.log("Raw Response category:", text);
                 const data = JSON.parse(text);
                 setCategories(data);
             } catch (err) {
@@ -30,7 +32,8 @@ const ProductFilterPage = () => {
 
         const fetchProducts = async () => {
             try {
-                const response = await fetch("http://localhost/pbt/get_products.php");
+                const response = await fetch(`${baseUrl}/get_products.php`);
+                // const response = await fetch("http://localhost/pbt/get_products.php");
                 const text = await response.text();
                 // console.log("Raw Response products:", text);
 
@@ -138,7 +141,8 @@ const ProductFilterPage = () => {
                         <div key={product.id} className="col-xs-10 col-lg-4 col-sm-6 col-md-4 mb-4 custom-product-card-colmn">
                             <div className="card product-card">
                                 <img
-                                    src={product.image}
+                                    src={img80}
+                                    // src={product.image}
                                     className="card-img-top"
                                     alt={product.name}
                                 // onError={(e) => (e.target.src = "https://via.placeholder.com/150")} // Fallback image
